@@ -1,0 +1,9 @@
+Estimated sgRNA length:[20]
+Downloading files from bitbucket:https://bitbucket.org/liulab/mageck-vispr/downloads/sgrna_annotation_hg38_exome_20bp.txt.bz2
+Warning: sequence not found	834873	GTGGTTGGTGTACAGTTCCG	AIRE
+Warning: sequence not found	834875	ACCGGGTTTTCTTCCCAATA	AIRE
+Warning: sequence not found	834881	AAGAGACGCCCATGCAGACT	AIRE
+Warning: sequence not found	885801	TCACCGAGAGTTTTCGCGAG	CECR2
+Warning: sequence not found	669629	CCGACTCTGTGATTACCGGC	CECR2
+Warning: sequence not found	669632	ATCTCCACCCGTGTGCGAAG	CECR2
+Warning: sequence not found	669649	CACGTCATCTCTGTGAAGAG	CECR2

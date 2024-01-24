@@ -1,0 +1,186 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+annotate_sgrnas        1
+fastqc                32
+fastqc_paired         32
+mageck_count           1
+mageck_rra             3
+vispr                  3
+total                 73
+
+Select jobs to execute...
+
+[Fri Sep 29 09:50:21 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-4_R2_001.fastq.gz
+    output: results/qc/day7_Cas9_r4_0_R2
+    log: logs/fastqc/day7_Cas9_r4_0_R2.log
+    jobid: 65
+    reason: Missing output files: results/qc/day7_Cas9_r4_0_R2
+    wildcards: replicate=day7_Cas9_r4_0
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:21 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/pEPIGEN2_R1_001.fastq.gz
+    output: results/qc/day0_r2_0
+    log: logs/fastqc/day0_r2_0.log
+    jobid: 36
+    reason: Missing output files: results/qc/day0_r2_0
+    wildcards: replicate=day0_r2_0
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:21 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-5_R1_001.fastq.gz
+    output: results/qc/day21_r5_0
+    log: logs/fastqc/day21_r5_0.log
+    jobid: 14
+    reason: Missing output files: results/qc/day21_r5_0
+    wildcards: replicate=day21_r5_0
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:21 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-1_R2_001.fastq.gz
+    output: results/qc/day14_Cas9_r1_0_R2
+    log: logs/fastqc/day14_Cas9_r1_0_R2.log
+    jobid: 52
+    reason: Missing output files: results/qc/day14_Cas9_r1_0_R2
+    wildcards: replicate=day14_Cas9_r1_0
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:21 2023]
+rule annotate_sgrnas:
+    input: ../../data/library.csv
+    output: annotation/sgrnas.bed
+    log: logs/annotation/sgrnas.log
+    jobid: 2
+    reason: Missing output files: annotation/sgrnas.bed
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:21 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-4_R1_001.fastq.gz
+    output: results/qc/day21_Cas9_r4_0
+    log: logs/fastqc/day21_Cas9_r4_0.log
+    jobid: 28
+    reason: Missing output files: results/qc/day21_Cas9_r4_0
+    wildcards: replicate=day21_Cas9_r4_0
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:21 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-2_R1_001.fastq.gz
+    output: results/qc/day14_Cas9_r2_0
+    log: logs/fastqc/day14_Cas9_r2_0.log
+    jobid: 21
+    reason: Missing output files: results/qc/day14_Cas9_r2_0
+    wildcards: replicate=day14_Cas9_r2_0
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:21 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-3_R1_001.fastq.gz
+    output: results/qc/day14_r3_0
+    log: logs/fastqc/day14_r3_0.log
+    jobid: 7
+    reason: Missing output files: results/qc/day14_r3_0
+    wildcards: replicate=day14_r3_0
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+[Fri Sep 29 09:50:25 2023]
+Error in rule fastqc_paired:
+    jobid: 65
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-4_R2_001.fastq.gz
+    output: results/qc/day7_Cas9_r4_0_R2
+    log: logs/fastqc/day7_Cas9_r4_0_R2.log (check log file(s) for error details)
+    shell:
+        mkdir -p results/qc/day7_Cas9_r4_0_R2; rm -rf results/qc/day7_Cas9_r4_0_R2/*; fastqc -f fastq --extract -o results/qc/day7_Cas9_r4_0_R2 ../../FASTQ_files/PatuT/PatuT-Cas9-7d-4_R2_001.fastq.gz 2> logs/fastqc/day7_Cas9_r4_0_R2.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep 29 09:50:25 2023]
+Error in rule fastqc:
+    jobid: 14
+    input: ../../FASTQ_files/PatuT/PatuT-21d-5_R1_001.fastq.gz
+    output: results/qc/day21_r5_0
+    log: logs/fastqc/day21_r5_0.log (check log file(s) for error details)
+    shell:
+        mkdir -p results/qc/day21_r5_0; rm -rf results/qc/day21_r5_0/*; fastqc -f fastq --extract -o results/qc/day21_r5_0 ../../FASTQ_files/PatuT/PatuT-21d-5_R1_001.fastq.gz 2> logs/fastqc/day21_r5_0.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep 29 09:50:25 2023]
+[Fri Sep 29 09:50:25 2023]
+Error in rule fastqc:
+    jobid: 7
+    input: ../../FASTQ_files/PatuT/PatuT-14d-3_R1_001.fastq.gz
+    output: results/qc/day14_r3_0
+    log: logs/fastqc/day14_r3_0.log (check log file(s) for error details)
+    shell:
+        mkdir -p results/qc/day14_r3_0; rm -rf results/qc/day14_r3_0/*; fastqc -f fastq --extract -o results/qc/day14_r3_0 ../../FASTQ_files/PatuT/PatuT-14d-3_R1_001.fastq.gz 2> logs/fastqc/day14_r3_0.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep 29 09:50:25 2023]
+[Fri Sep 29 09:50:25 2023]
+Error in rule fastqc:
+    jobid: 21
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-2_R1_001.fastq.gz
+    output: results/qc/day14_Cas9_r2_0
+    log: logs/fastqc/day14_Cas9_r2_0.log (check log file(s) for error details)
+    shell:
+        mkdir -p results/qc/day14_Cas9_r2_0; rm -rf results/qc/day14_Cas9_r2_0/*; fastqc -f fastq --extract -o results/qc/day14_Cas9_r2_0 ../../FASTQ_files/PatuT/PatuT-Cas9-14d-2_R1_001.fastq.gz 2> logs/fastqc/day14_Cas9_r2_0.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fastqc:
+    jobid: 36
+    input: ../../FASTQ_files/PatuT/pEPIGEN2_R1_001.fastq.gz
+    output: results/qc/day0_r2_0
+    log: logs/fastqc/day0_r2_0.log (check log file(s) for error details)
+    shell:
+        mkdir -p results/qc/day0_r2_0; rm -rf results/qc/day0_r2_0/*; fastqc -f fastq --extract -o results/qc/day0_r2_0 ../../FASTQ_files/PatuT/pEPIGEN2_R1_001.fastq.gz 2> logs/fastqc/day0_r2_0.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule fastqc:
+    jobid: 28
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-4_R1_001.fastq.gz
+    output: results/qc/day21_Cas9_r4_0
+    log: logs/fastqc/day21_Cas9_r4_0.log (check log file(s) for error details)
+    shell:
+        mkdir -p results/qc/day21_Cas9_r4_0; rm -rf results/qc/day21_Cas9_r4_0/*; fastqc -f fastq --extract -o results/qc/day21_Cas9_r4_0 ../../FASTQ_files/PatuT/PatuT-Cas9-21d-4_R1_001.fastq.gz 2> logs/fastqc/day21_Cas9_r4_0.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep 29 09:50:25 2023]
+Error in rule fastqc_paired:
+    jobid: 52
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-1_R2_001.fastq.gz
+    output: results/qc/day14_Cas9_r1_0_R2
+    log: logs/fastqc/day14_Cas9_r1_0_R2.log (check log file(s) for error details)
+    shell:
+        mkdir -p results/qc/day14_Cas9_r1_0_R2; rm -rf results/qc/day14_Cas9_r1_0_R2/*; fastqc -f fastq --extract -o results/qc/day14_Cas9_r1_0_R2 ../../FASTQ_files/PatuT/PatuT-Cas9-14d-1_R2_001.fastq.gz 2> logs/fastqc/day14_Cas9_r1_0_R2.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep 29 09:50:25 2023]
+Error in rule annotate_sgrnas:
+    jobid: 2
+    input: ../../data/library.csv
+    output: annotation/sgrnas.bed
+    log: logs/annotation/sgrnas.log (check log file(s) for error details)
+    shell:
+        mkdir -p annotation; mageck-vispr annotate-library ../../data/library.csv     --sgrna-len AUTO --assembly hg38 > annotation/sgrnas.bed 2> logs/annotation/sgrnas.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-09-29T095020.963083.snakemake.log

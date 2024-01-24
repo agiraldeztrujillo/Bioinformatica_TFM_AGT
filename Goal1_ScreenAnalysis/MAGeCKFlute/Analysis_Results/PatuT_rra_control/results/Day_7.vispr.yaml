@@ -1,0 +1,140 @@
+assembly: hg38
+experiment: Day_7
+fastqc:
+  day0_r1:
+  - qc/day0_r1_0/pEPIGEN-1_R1_001_fastqc/fastqc_data.txt
+  day0_r2:
+  - qc/day0_r2_0/pEPIGEN2_R1_001_fastqc/fastqc_data.txt
+  day14_Cas9_r1:
+  - qc/day14_Cas9_r1_0/PatuT-Cas9-14d-1_R1_001_fastqc/fastqc_data.txt
+  day14_Cas9_r2:
+  - qc/day14_Cas9_r2_0/PatuT-Cas9-14d-2_R1_001_fastqc/fastqc_data.txt
+  day14_Cas9_r3:
+  - qc/day14_Cas9_r3_0/PatuT-Cas9-14d-3_R1_001_fastqc/fastqc_data.txt
+  day14_Cas9_r4:
+  - qc/day14_Cas9_r4_0/PatuT-Cas9-14d-4_R1_001_fastqc/fastqc_data.txt
+  day14_Cas9_r5:
+  - qc/day14_Cas9_r5_0/PatuT-Cas9-14d-5_R1_001_fastqc/fastqc_data.txt
+  day14_r1:
+  - qc/day14_r1_0/PatuT-14d-1_R1_001_fastqc/fastqc_data.txt
+  day14_r2:
+  - qc/day14_r2_0/PatuT-14d-2_R1_001_fastqc/fastqc_data.txt
+  day14_r3:
+  - qc/day14_r3_0/PatuT-14d-3_R1_001_fastqc/fastqc_data.txt
+  day14_r4:
+  - qc/day14_r4_0/PatuT-14d-4_R1_001_fastqc/fastqc_data.txt
+  day14_r5:
+  - qc/day14_r5_0/PatuT-14d-5_R1_001_fastqc/fastqc_data.txt
+  day21_Cas9_r1:
+  - qc/day21_Cas9_r1_0/PatuT-Cas9-21d-1_R1_001_fastqc/fastqc_data.txt
+  day21_Cas9_r2:
+  - qc/day21_Cas9_r2_0/PatuT-Cas9-21d-2_R1_001_fastqc/fastqc_data.txt
+  day21_Cas9_r3:
+  - qc/day21_Cas9_r3_0/PatuT-Cas9-21d-3_R1_001_fastqc/fastqc_data.txt
+  day21_Cas9_r4:
+  - qc/day21_Cas9_r4_0/PatuT-Cas9-21d-4_R1_001_fastqc/fastqc_data.txt
+  day21_Cas9_r5:
+  - qc/day21_Cas9_r5_0/PatuT-Cas9-21d-5_R1_001_fastqc/fastqc_data.txt
+  day21_r1:
+  - qc/day21_r1_0/PatuT-21d-1_R1_001_fastqc/fastqc_data.txt
+  day21_r2:
+  - qc/day21_r2_0/PatuT-21d-2_R1_001_fastqc/fastqc_data.txt
+  day21_r3:
+  - qc/day21_r3_0/PatuT-21d-3_R1_001_fastqc/fastqc_data.txt
+  day21_r4:
+  - qc/day21_r4_0/PatuT-21d-4_R1_001_fastqc/fastqc_data.txt
+  day21_r5:
+  - qc/day21_r5_0/PatuT-21d-5_R1_001_fastqc/fastqc_data.txt
+  day7_Cas9_r1:
+  - qc/day7_Cas9_r1_0/PatuT-Cas9-7d-1_R1_001_fastqc/fastqc_data.txt
+  day7_Cas9_r2:
+  - qc/day7_Cas9_r2_0/PatuT-Cas9-7d-2_R1_001_fastqc/fastqc_data.txt
+  day7_Cas9_r3:
+  - qc/day7_Cas9_r3_0/PatuT-Cas9-7d-3_R1_001_fastqc/fastqc_data.txt
+  day7_Cas9_r4:
+  - qc/day7_Cas9_r4_0/PatuT-Cas9-7d-4_R1_001_fastqc/fastqc_data.txt
+  day7_Cas9_r5:
+  - qc/day7_Cas9_r5_0/PatuT-Cas9-7d-5_R1_001_fastqc/fastqc_data.txt
+  day7_r1:
+  - qc/day7_r1_0/PatuT-7d-1_R1_001_fastqc/fastqc_data.txt
+  day7_r2:
+  - qc/day7_r2_0/PatuT-7d-2_R1_001_fastqc/fastqc_data.txt
+  day7_r3:
+  - qc/day7_r3_0/PatuT-7d-3_R1_001_fastqc/fastqc_data.txt
+  day7_r4:
+  - qc/day7_r4_0/PatuT-7d-4-2_R1_001_fastqc/fastqc_data.txt
+  day7_r5:
+  - qc/day7_r5_0/PatuT-7d-5_R1_001_fastqc/fastqc_data.txt
+pairedfastqc:
+  day0_r1:
+  - qc/day0_r1_0_R2/pEPIGEN-1_R2_001_fastqc/fastqc_data.txt
+  day0_r2:
+  - qc/day0_r2_0_R2/pEPIGEN2_R2_001_fastqc/fastqc_data.txt
+  day14_Cas9_r1:
+  - qc/day14_Cas9_r1_0_R2/PatuT-Cas9-14d-1_R2_001_fastqc/fastqc_data.txt
+  day14_Cas9_r2:
+  - qc/day14_Cas9_r2_0_R2/PatuT-Cas9-14d-2_R2_001_fastqc/fastqc_data.txt
+  day14_Cas9_r3:
+  - qc/day14_Cas9_r3_0_R2/PatuT-Cas9-14d-3_R2_001_fastqc/fastqc_data.txt
+  day14_Cas9_r4:
+  - qc/day14_Cas9_r4_0_R2/PatuT-Cas9-14d-4_R2_001_fastqc/fastqc_data.txt
+  day14_Cas9_r5:
+  - qc/day14_Cas9_r5_0_R2/PatuT-Cas9-14d-5_R2_001_fastqc/fastqc_data.txt
+  day14_r1:
+  - qc/day14_r1_0_R2/PatuT-14d-1_R2_001_fastqc/fastqc_data.txt
+  day14_r2:
+  - qc/day14_r2_0_R2/PatuT-14d-2_R2_001_fastqc/fastqc_data.txt
+  day14_r3:
+  - qc/day14_r3_0_R2/PatuT-14d-3_R2_001_fastqc/fastqc_data.txt
+  day14_r4:
+  - qc/day14_r4_0_R2/PatuT-14d-4_R2_001_fastqc/fastqc_data.txt
+  day14_r5:
+  - qc/day14_r5_0_R2/PatuT-14d-5_R2_001_fastqc/fastqc_data.txt
+  day21_Cas9_r1:
+  - qc/day21_Cas9_r1_0_R2/PatuT-Cas9-21d-1_R2_001_fastqc/fastqc_data.txt
+  day21_Cas9_r2:
+  - qc/day21_Cas9_r2_0_R2/PatuT-Cas9-21d-2_R2_001_fastqc/fastqc_data.txt
+  day21_Cas9_r3:
+  - qc/day21_Cas9_r3_0_R2/PatuT-Cas9-21d-3_R2_001_fastqc/fastqc_data.txt
+  day21_Cas9_r4:
+  - qc/day21_Cas9_r4_0_R2/PatuT-Cas9-21d-4_R2_001_fastqc/fastqc_data.txt
+  day21_Cas9_r5:
+  - qc/day21_Cas9_r5_0_R2/PatuT-Cas9-21d-5_R2_001_fastqc/fastqc_data.txt
+  day21_r1:
+  - qc/day21_r1_0_R2/PatuT-21d-1_R2_001_fastqc/fastqc_data.txt
+  day21_r2:
+  - qc/day21_r2_0_R2/PatuT-21d-2_R2_001_fastqc/fastqc_data.txt
+  day21_r3:
+  - qc/day21_r3_0_R2/PatuT-21d-3_R2_001_fastqc/fastqc_data.txt
+  day21_r4:
+  - qc/day21_r4_0_R2/PatuT-21d-4_R2_001_fastqc/fastqc_data.txt
+  day21_r5:
+  - qc/day21_r5_0_R2/PatuT-21d-5_R2_001_fastqc/fastqc_data.txt
+  day7_Cas9_r1:
+  - qc/day7_Cas9_r1_0_R2/PatuT-Cas9-7d-1_R2_001_fastqc/fastqc_data.txt
+  day7_Cas9_r2:
+  - qc/day7_Cas9_r2_0_R2/PatuT-Cas9-7d-2_R2_001_fastqc/fastqc_data.txt
+  day7_Cas9_r3:
+  - qc/day7_Cas9_r3_0_R2/PatuT-Cas9-7d-3_R2_001_fastqc/fastqc_data.txt
+  day7_Cas9_r4:
+  - qc/day7_Cas9_r4_0_R2/PatuT-Cas9-7d-4_R2_001_fastqc/fastqc_data.txt
+  day7_Cas9_r5:
+  - qc/day7_Cas9_r5_0_R2/PatuT-Cas9-7d-5_R2_001_fastqc/fastqc_data.txt
+  day7_r1:
+  - qc/day7_r1_0_R2/PatuT-7d-1_R2_001_fastqc/fastqc_data.txt
+  day7_r2:
+  - qc/day7_r2_0_R2/PatuT-7d-2_R2_001_fastqc/fastqc_data.txt
+  day7_r3:
+  - qc/day7_r3_0_R2/PatuT-7d-3_R2_001_fastqc/fastqc_data.txt
+  day7_r4:
+  - qc/day7_r4_0_R2/PatuT-7d-4-2_R2_001_fastqc/fastqc_data.txt
+  day7_r5:
+  - qc/day7_r5_0_R2/PatuT-7d-5_R2_001_fastqc/fastqc_data.txt
+sgrnas:
+  annotation: sgrnas.bed
+  counts: count/all.count_normalized.txt
+  mapstats: count/all.countsummary.txt
+species: homo_sapiens
+targets:
+  genes: true
+  results: test/Day_7.gene_summary.txt

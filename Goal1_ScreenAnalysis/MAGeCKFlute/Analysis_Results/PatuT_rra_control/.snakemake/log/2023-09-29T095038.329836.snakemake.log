@@ -1,0 +1,1099 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+annotate_sgrnas        1
+fastqc                32
+fastqc_paired         32
+mageck_count           1
+mageck_rra             3
+vispr                  3
+total                 73
+
+Select jobs to execute...
+
+[Fri Sep 29 09:50:39 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-5_R2_001.fastq.gz
+    output: results/qc/day21_r5_0_R2
+    log: logs/fastqc/day21_r5_0_R2.log
+    jobid: 46
+    reason: Missing output files: results/qc/day21_r5_0_R2
+    wildcards: replicate=day21_r5_0
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:39 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/pEPIGEN2_R1_001.fastq.gz
+    output: results/qc/day0_r2_0
+    log: logs/fastqc/day0_r2_0.log
+    jobid: 36
+    reason: Missing output files: results/qc/day0_r2_0
+    wildcards: replicate=day0_r2_0
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:39 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-3_R2_001.fastq.gz
+    output: results/qc/day7_Cas9_r3_0_R2
+    log: logs/fastqc/day7_Cas9_r3_0_R2.log
+    jobid: 64
+    reason: Missing output files: results/qc/day7_Cas9_r3_0_R2
+    wildcards: replicate=day7_Cas9_r3_0
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:50:39 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-5_R1_001.fastq.gz
+    output: results/qc/day21_r5_0
+    log: logs/fastqc/day21_r5_0.log
+    jobid: 14
+    reason: Missing output files: results/qc/day21_r5_0
+    wildcards: replicate=day21_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:50:47 2023]
+Finished job 64.
+1 of 73 steps (1%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:50:47 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-4_R2_001.fastq.gz
+    output: results/qc/day14_Cas9_r4_0_R2
+    log: logs/fastqc/day14_Cas9_r4_0_R2.log
+    jobid: 55
+    reason: Missing output files: results/qc/day14_Cas9_r4_0_R2
+    wildcards: replicate=day14_Cas9_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:50:48 2023]
+Finished job 46.
+2 of 73 steps (3%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:50:48 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-3_R1_001.fastq.gz
+    output: results/qc/day21_r3_0
+    log: logs/fastqc/day21_r3_0.log
+    jobid: 12
+    reason: Missing output files: results/qc/day21_r3_0
+    wildcards: replicate=day21_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:50:48 2023]
+Finished job 36.
+3 of 73 steps (4%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:50:48 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-5_R1_001.fastq.gz
+    output: results/qc/day7_Cas9_r5_0
+    log: logs/fastqc/day7_Cas9_r5_0.log
+    jobid: 34
+    reason: Missing output files: results/qc/day7_Cas9_r5_0
+    wildcards: replicate=day7_Cas9_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:50:48 2023]
+Finished job 14.
+4 of 73 steps (5%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:50:48 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-1_R2_001.fastq.gz
+    output: results/qc/day14_Cas9_r1_0_R2
+    log: logs/fastqc/day14_Cas9_r1_0_R2.log
+    jobid: 52
+    reason: Missing output files: results/qc/day14_Cas9_r1_0_R2
+    wildcards: replicate=day14_Cas9_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:50:56 2023]
+Finished job 55.
+5 of 73 steps (7%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:50:56 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-4_R2_001.fastq.gz
+    output: results/qc/day21_r4_0_R2
+    log: logs/fastqc/day21_r4_0_R2.log
+    jobid: 45
+    reason: Missing output files: results/qc/day21_r4_0_R2
+    wildcards: replicate=day21_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:50:56 2023]
+Finished job 34.
+6 of 73 steps (8%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:50:56 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-1_R2_001.fastq.gz
+    output: results/qc/day21_r1_0_R2
+    log: logs/fastqc/day21_r1_0_R2.log
+    jobid: 42
+    reason: Missing output files: results/qc/day21_r1_0_R2
+    wildcards: replicate=day21_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:50:56 2023]
+Finished job 12.
+7 of 73 steps (10%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:50:56 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-4_R1_001.fastq.gz
+    output: results/qc/day14_r4_0
+    log: logs/fastqc/day14_r4_0.log
+    jobid: 8
+    reason: Missing output files: results/qc/day14_r4_0
+    wildcards: replicate=day14_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:50:56 2023]
+Finished job 52.
+8 of 73 steps (11%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:50:56 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-3_R1_001.fastq.gz
+    output: results/qc/day21_Cas9_r3_0
+    log: logs/fastqc/day21_Cas9_r3_0.log
+    jobid: 27
+    reason: Missing output files: results/qc/day21_Cas9_r3_0
+    wildcards: replicate=day21_Cas9_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:05 2023]
+Finished job 45.
+9 of 73 steps (12%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:05 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-5_R1_001.fastq.gz
+    output: results/qc/day7_r5_0
+    log: logs/fastqc/day7_r5_0.log
+    jobid: 19
+    reason: Missing output files: results/qc/day7_r5_0
+    wildcards: replicate=day7_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:05 2023]
+Finished job 8.
+10 of 73 steps (14%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:05 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-1_R1_001.fastq.gz
+    output: results/qc/day14_Cas9_r1_0
+    log: logs/fastqc/day14_Cas9_r1_0.log
+    jobid: 20
+    reason: Missing output files: results/qc/day14_Cas9_r1_0
+    wildcards: replicate=day14_Cas9_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:05 2023]
+Finished job 27.
+11 of 73 steps (15%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:05 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-4_R2_001.fastq.gz
+    output: results/qc/day21_Cas9_r4_0_R2
+    log: logs/fastqc/day21_Cas9_r4_0_R2.log
+    jobid: 60
+    reason: Missing output files: results/qc/day21_Cas9_r4_0_R2
+    wildcards: replicate=day21_Cas9_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:06 2023]
+Finished job 42.
+12 of 73 steps (16%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:06 2023]
+rule mageck_count:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-1_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-14d-2_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-14d-3_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-14d-4_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-14d-5_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-21d-1_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-21d-2_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-21d-3_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-21d-4_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-21d-5_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-7d-1_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-7d-2_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-7d-3_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-7d-4-2_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-7d-5_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-14d-1_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-14d-2_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-14d-3_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-14d-4_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-14d-5_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-21d-1_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-21d-2_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-21d-3_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-21d-4_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-21d-5_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-7d-1_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-7d-2_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-7d-3_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-7d-4_R1_001.fastq.gz, ../../FASTQ_files/PatuT/PatuT-Cas9-7d-5_R1_001.fastq.gz, ../../FASTQ_files/PatuT/pEPIGEN-1_R1_001.fastq.gz, ../../FASTQ_files/PatuT/pEPIGEN2_R1_001.fastq.gz, ../../data/library.csv
+    output: results/count/all.count.txt, results/count/all.count_normalized.txt, results/count/all.countsummary.txt
+    log: logs/mageck/count/all.log
+    jobid: 4
+    reason: Missing output files: results/count/all.countsummary.txt, results/count/all.count.txt, results/count/all.count_normalized.txt; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:12 2023]
+Finished job 19.
+13 of 73 steps (18%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:12 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-2_R1_001.fastq.gz
+    output: results/qc/day21_Cas9_r2_0
+    log: logs/fastqc/day21_Cas9_r2_0.log
+    jobid: 26
+    reason: Missing output files: results/qc/day21_Cas9_r2_0
+    wildcards: replicate=day21_Cas9_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:12 2023]
+Finished job 60.
+14 of 73 steps (19%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:12 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-3_R2_001.fastq.gz
+    output: results/qc/day7_r3_0_R2
+    log: logs/fastqc/day7_r3_0_R2.log
+    jobid: 49
+    reason: Missing output files: results/qc/day7_r3_0_R2
+    wildcards: replicate=day7_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:12 2023]
+Finished job 20.
+15 of 73 steps (21%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:13 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-4_R1_001.fastq.gz
+    output: results/qc/day14_Cas9_r4_0
+    log: logs/fastqc/day14_Cas9_r4_0.log
+    jobid: 23
+    reason: Missing output files: results/qc/day14_Cas9_r4_0
+    wildcards: replicate=day14_Cas9_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:19 2023]
+Finished job 26.
+16 of 73 steps (22%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:20 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-3_R2_001.fastq.gz
+    output: results/qc/day21_Cas9_r3_0_R2
+    log: logs/fastqc/day21_Cas9_r3_0_R2.log
+    jobid: 59
+    reason: Missing output files: results/qc/day21_Cas9_r3_0_R2
+    wildcards: replicate=day21_Cas9_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:21 2023]
+Finished job 23.
+17 of 73 steps (23%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:21 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-4_R1_001.fastq.gz
+    output: results/qc/day21_r4_0
+    log: logs/fastqc/day21_r4_0.log
+    jobid: 13
+    reason: Missing output files: results/qc/day21_r4_0
+    wildcards: replicate=day21_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:21 2023]
+Finished job 49.
+18 of 73 steps (25%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:21 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-4_R2_001.fastq.gz
+    output: results/qc/day14_r4_0_R2
+    log: logs/fastqc/day14_r4_0_R2.log
+    jobid: 40
+    reason: Missing output files: results/qc/day14_r4_0_R2
+    wildcards: replicate=day14_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:27 2023]
+Finished job 59.
+19 of 73 steps (26%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:27 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/pEPIGEN-1_R1_001.fastq.gz
+    output: results/qc/day0_r1_0
+    log: logs/fastqc/day0_r1_0.log
+    jobid: 35
+    reason: Missing output files: results/qc/day0_r1_0
+    wildcards: replicate=day0_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:29 2023]
+Finished job 40.
+20 of 73 steps (27%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:29 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-4_R1_001.fastq.gz
+    output: results/qc/day21_Cas9_r4_0
+    log: logs/fastqc/day21_Cas9_r4_0.log
+    jobid: 28
+    reason: Missing output files: results/qc/day21_Cas9_r4_0
+    wildcards: replicate=day21_Cas9_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:29 2023]
+Finished job 13.
+21 of 73 steps (29%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:29 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-3_R2_001.fastq.gz
+    output: results/qc/day14_r3_0_R2
+    log: logs/fastqc/day14_r3_0_R2.log
+    jobid: 39
+    reason: Missing output files: results/qc/day14_r3_0_R2
+    wildcards: replicate=day14_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:36 2023]
+Finished job 35.
+22 of 73 steps (30%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:36 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-2_R1_001.fastq.gz
+    output: results/qc/day14_Cas9_r2_0
+    log: logs/fastqc/day14_Cas9_r2_0.log
+    jobid: 21
+    reason: Missing output files: results/qc/day14_Cas9_r2_0
+    wildcards: replicate=day14_Cas9_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:37 2023]
+Finished job 28.
+23 of 73 steps (32%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:37 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-1_R2_001.fastq.gz
+    output: results/qc/day21_Cas9_r1_0_R2
+    log: logs/fastqc/day21_Cas9_r1_0_R2.log
+    jobid: 57
+    reason: Missing output files: results/qc/day21_Cas9_r1_0_R2
+    wildcards: replicate=day21_Cas9_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:38 2023]
+Finished job 39.
+24 of 73 steps (33%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:38 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-3_R1_001.fastq.gz
+    output: results/qc/day14_r3_0
+    log: logs/fastqc/day14_r3_0.log
+    jobid: 7
+    reason: Missing output files: results/qc/day14_r3_0
+    wildcards: replicate=day14_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:45 2023]
+Finished job 57.
+25 of 73 steps (34%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:45 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-2_R1_001.fastq.gz
+    output: results/qc/day21_r2_0
+    log: logs/fastqc/day21_r2_0.log
+    jobid: 11
+    reason: Missing output files: results/qc/day21_r2_0
+    wildcards: replicate=day21_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:45 2023]
+Finished job 21.
+26 of 73 steps (36%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:45 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-5_R2_001.fastq.gz
+    output: results/qc/day21_Cas9_r5_0_R2
+    log: logs/fastqc/day21_Cas9_r5_0_R2.log
+    jobid: 61
+    reason: Missing output files: results/qc/day21_Cas9_r5_0_R2
+    wildcards: replicate=day21_Cas9_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:47 2023]
+Finished job 7.
+27 of 73 steps (37%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:47 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-4_R1_001.fastq.gz
+    output: results/qc/day7_Cas9_r4_0
+    log: logs/fastqc/day7_Cas9_r4_0.log
+    jobid: 33
+    reason: Missing output files: results/qc/day7_Cas9_r4_0
+    wildcards: replicate=day7_Cas9_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:53 2023]
+Finished job 61.
+28 of 73 steps (38%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:53 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/pEPIGEN2_R2_001.fastq.gz
+    output: results/qc/day0_r2_0_R2
+    log: logs/fastqc/day0_r2_0_R2.log
+    jobid: 68
+    reason: Missing output files: results/qc/day0_r2_0_R2
+    wildcards: replicate=day0_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:53 2023]
+Finished job 11.
+29 of 73 steps (40%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:53 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/pEPIGEN-1_R2_001.fastq.gz
+    output: results/qc/day0_r1_0_R2
+    log: logs/fastqc/day0_r1_0_R2.log
+    jobid: 67
+    reason: Missing output files: results/qc/day0_r1_0_R2
+    wildcards: replicate=day0_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:51:55 2023]
+Finished job 33.
+30 of 73 steps (41%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:51:55 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-5_R1_001.fastq.gz
+    output: results/qc/day21_Cas9_r5_0
+    log: logs/fastqc/day21_Cas9_r5_0.log
+    jobid: 29
+    reason: Missing output files: results/qc/day21_Cas9_r5_0
+    wildcards: replicate=day21_Cas9_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:01 2023]
+Finished job 68.
+31 of 73 steps (42%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:01 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-1_R2_001.fastq.gz
+    output: results/qc/day7_r1_0_R2
+    log: logs/fastqc/day7_r1_0_R2.log
+    jobid: 47
+    reason: Missing output files: results/qc/day7_r1_0_R2
+    wildcards: replicate=day7_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:03 2023]
+Finished job 67.
+32 of 73 steps (44%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:03 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-2_R2_001.fastq.gz
+    output: results/qc/day21_r2_0_R2
+    log: logs/fastqc/day21_r2_0_R2.log
+    jobid: 43
+    reason: Missing output files: results/qc/day21_r2_0_R2
+    wildcards: replicate=day21_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:04 2023]
+Finished job 29.
+33 of 73 steps (45%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:04 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-2_R1_001.fastq.gz
+    output: results/qc/day7_r2_0
+    log: logs/fastqc/day7_r2_0.log
+    jobid: 16
+    reason: Missing output files: results/qc/day7_r2_0
+    wildcards: replicate=day7_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:10 2023]
+Finished job 47.
+34 of 73 steps (47%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:10 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-2_R2_001.fastq.gz
+    output: results/qc/day7_Cas9_r2_0_R2
+    log: logs/fastqc/day7_Cas9_r2_0_R2.log
+    jobid: 63
+    reason: Missing output files: results/qc/day7_Cas9_r2_0_R2
+    wildcards: replicate=day7_Cas9_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:12 2023]
+Finished job 43.
+35 of 73 steps (48%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:12 2023]
+rule annotate_sgrnas:
+    input: ../../data/library.csv
+    output: annotation/sgrnas.bed
+    log: logs/annotation/sgrnas.log
+    jobid: 2
+    reason: Missing output files: annotation/sgrnas.bed
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:14 2023]
+Finished job 16.
+36 of 73 steps (49%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:14 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-4-2_R2_001.fastq.gz
+    output: results/qc/day7_r4_0_R2
+    log: logs/fastqc/day7_r4_0_R2.log
+    jobid: 50
+    reason: Missing output files: results/qc/day7_r4_0_R2
+    wildcards: replicate=day7_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:17 2023]
+Finished job 63.
+37 of 73 steps (51%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:17 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-2_R1_001.fastq.gz
+    output: results/qc/day7_Cas9_r2_0
+    log: logs/fastqc/day7_Cas9_r2_0.log
+    jobid: 31
+    reason: Missing output files: results/qc/day7_Cas9_r2_0
+    wildcards: replicate=day7_Cas9_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:22 2023]
+Finished job 50.
+38 of 73 steps (52%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:22 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-5_R1_001.fastq.gz
+    output: results/qc/day14_r5_0
+    log: logs/fastqc/day14_r5_0.log
+    jobid: 9
+    reason: Missing output files: results/qc/day14_r5_0
+    wildcards: replicate=day14_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:26 2023]
+Finished job 31.
+39 of 73 steps (53%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:26 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-2_R2_001.fastq.gz
+    output: results/qc/day7_r2_0_R2
+    log: logs/fastqc/day7_r2_0_R2.log
+    jobid: 48
+    reason: Missing output files: results/qc/day7_r2_0_R2
+    wildcards: replicate=day7_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:29 2023]
+Finished job 9.
+40 of 73 steps (55%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:29 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-2_R2_001.fastq.gz
+    output: results/qc/day14_r2_0_R2
+    log: logs/fastqc/day14_r2_0_R2.log
+    jobid: 38
+    reason: Missing output files: results/qc/day14_r2_0_R2
+    wildcards: replicate=day14_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:33 2023]
+Finished job 48.
+41 of 73 steps (56%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:33 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-5_R1_001.fastq.gz
+    output: results/qc/day14_Cas9_r5_0
+    log: logs/fastqc/day14_Cas9_r5_0.log
+    jobid: 24
+    reason: Missing output files: results/qc/day14_Cas9_r5_0
+    wildcards: replicate=day14_Cas9_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:38 2023]
+Finished job 38.
+42 of 73 steps (58%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:38 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-1_R2_001.fastq.gz
+    output: results/qc/day7_Cas9_r1_0_R2
+    log: logs/fastqc/day7_Cas9_r1_0_R2.log
+    jobid: 62
+    reason: Missing output files: results/qc/day7_Cas9_r1_0_R2
+    wildcards: replicate=day7_Cas9_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:40 2023]
+Finished job 24.
+43 of 73 steps (59%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:40 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-3_R1_001.fastq.gz
+    output: results/qc/day7_r3_0
+    log: logs/fastqc/day7_r3_0.log
+    jobid: 17
+    reason: Missing output files: results/qc/day7_r3_0
+    wildcards: replicate=day7_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:46 2023]
+Finished job 62.
+44 of 73 steps (60%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:46 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-5_R2_001.fastq.gz
+    output: results/qc/day14_Cas9_r5_0_R2
+    log: logs/fastqc/day14_Cas9_r5_0_R2.log
+    jobid: 56
+    reason: Missing output files: results/qc/day14_Cas9_r5_0_R2
+    wildcards: replicate=day14_Cas9_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:48 2023]
+Finished job 17.
+45 of 73 steps (62%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:48 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-1_R1_001.fastq.gz
+    output: results/qc/day21_r1_0
+    log: logs/fastqc/day21_r1_0.log
+    jobid: 10
+    reason: Missing output files: results/qc/day21_r1_0
+    wildcards: replicate=day21_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:54 2023]
+Finished job 56.
+46 of 73 steps (63%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:54 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-4_R2_001.fastq.gz
+    output: results/qc/day7_Cas9_r4_0_R2
+    log: logs/fastqc/day7_Cas9_r4_0_R2.log
+    jobid: 65
+    reason: Missing output files: results/qc/day7_Cas9_r4_0_R2
+    wildcards: replicate=day7_Cas9_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:52:56 2023]
+Finished job 10.
+47 of 73 steps (64%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:52:56 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-5_R2_001.fastq.gz
+    output: results/qc/day7_r5_0_R2
+    log: logs/fastqc/day7_r5_0_R2.log
+    jobid: 51
+    reason: Missing output files: results/qc/day7_r5_0_R2
+    wildcards: replicate=day7_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:02 2023]
+Finished job 65.
+48 of 73 steps (66%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:02 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-1_R1_001.fastq.gz
+    output: results/qc/day7_r1_0
+    log: logs/fastqc/day7_r1_0.log
+    jobid: 15
+    reason: Missing output files: results/qc/day7_r1_0
+    wildcards: replicate=day7_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:03 2023]
+Finished job 51.
+49 of 73 steps (67%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:03 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-2_R2_001.fastq.gz
+    output: results/qc/day14_Cas9_r2_0_R2
+    log: logs/fastqc/day14_Cas9_r2_0_R2.log
+    jobid: 53
+    reason: Missing output files: results/qc/day14_Cas9_r2_0_R2
+    wildcards: replicate=day14_Cas9_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:08 2023]
+Finished job 15.
+50 of 73 steps (68%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:08 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-5_R2_001.fastq.gz
+    output: results/qc/day14_r5_0_R2
+    log: logs/fastqc/day14_r5_0_R2.log
+    jobid: 41
+    reason: Missing output files: results/qc/day14_r5_0_R2
+    wildcards: replicate=day14_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:11 2023]
+Finished job 53.
+51 of 73 steps (70%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:11 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-1_R1_001.fastq.gz
+    output: results/qc/day7_Cas9_r1_0
+    log: logs/fastqc/day7_Cas9_r1_0.log
+    jobid: 30
+    reason: Missing output files: results/qc/day7_Cas9_r1_0
+    wildcards: replicate=day7_Cas9_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:15 2023]
+Finished job 41.
+52 of 73 steps (71%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:16 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-21d-3_R2_001.fastq.gz
+    output: results/qc/day21_r3_0_R2
+    log: logs/fastqc/day21_r3_0_R2.log
+    jobid: 44
+    reason: Missing output files: results/qc/day21_r3_0_R2
+    wildcards: replicate=day21_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:19 2023]
+Finished job 30.
+53 of 73 steps (73%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:19 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-3_R1_001.fastq.gz
+    output: results/qc/day7_Cas9_r3_0
+    log: logs/fastqc/day7_Cas9_r3_0.log
+    jobid: 32
+    reason: Missing output files: results/qc/day7_Cas9_r3_0
+    wildcards: replicate=day7_Cas9_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:22 2023]
+Finished job 44.
+54 of 73 steps (74%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:23 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-7d-5_R2_001.fastq.gz
+    output: results/qc/day7_Cas9_r5_0_R2
+    log: logs/fastqc/day7_Cas9_r5_0_R2.log
+    jobid: 66
+    reason: Missing output files: results/qc/day7_Cas9_r5_0_R2
+    wildcards: replicate=day7_Cas9_r5_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:27 2023]
+Finished job 32.
+55 of 73 steps (75%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:27 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-1_R2_001.fastq.gz
+    output: results/qc/day14_r1_0_R2
+    log: logs/fastqc/day14_r1_0_R2.log
+    jobid: 37
+    reason: Missing output files: results/qc/day14_r1_0_R2
+    wildcards: replicate=day14_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:29 2023]
+Finished job 66.
+56 of 73 steps (77%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:29 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-2_R2_001.fastq.gz
+    output: results/qc/day21_Cas9_r2_0_R2
+    log: logs/fastqc/day21_Cas9_r2_0_R2.log
+    jobid: 58
+    reason: Missing output files: results/qc/day21_Cas9_r2_0_R2
+    wildcards: replicate=day21_Cas9_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:34 2023]
+Finished job 37.
+57 of 73 steps (78%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:34 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-1_R1_001.fastq.gz
+    output: results/qc/day14_r1_0
+    log: logs/fastqc/day14_r1_0.log
+    jobid: 5
+    reason: Missing output files: results/qc/day14_r1_0
+    wildcards: replicate=day14_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:37 2023]
+Finished job 58.
+58 of 73 steps (79%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:37 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-3_R1_001.fastq.gz
+    output: results/qc/day14_Cas9_r3_0
+    log: logs/fastqc/day14_Cas9_r3_0.log
+    jobid: 22
+    reason: Missing output files: results/qc/day14_Cas9_r3_0
+    wildcards: replicate=day14_Cas9_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:42 2023]
+Finished job 5.
+59 of 73 steps (81%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:42 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-21d-1_R1_001.fastq.gz
+    output: results/qc/day21_Cas9_r1_0
+    log: logs/fastqc/day21_Cas9_r1_0.log
+    jobid: 25
+    reason: Missing output files: results/qc/day21_Cas9_r1_0
+    wildcards: replicate=day21_Cas9_r1_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:44 2023]
+Finished job 22.
+60 of 73 steps (82%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:44 2023]
+rule fastqc_paired:
+    input: ../../FASTQ_files/PatuT/PatuT-Cas9-14d-3_R2_001.fastq.gz
+    output: results/qc/day14_Cas9_r3_0_R2
+    log: logs/fastqc/day14_Cas9_r3_0_R2.log
+    jobid: 54
+    reason: Missing output files: results/qc/day14_Cas9_r3_0_R2
+    wildcards: replicate=day14_Cas9_r3_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:50 2023]
+Finished job 25.
+61 of 73 steps (84%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:50 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-14d-2_R1_001.fastq.gz
+    output: results/qc/day14_r2_0
+    log: logs/fastqc/day14_r2_0.log
+    jobid: 6
+    reason: Missing output files: results/qc/day14_r2_0
+    wildcards: replicate=day14_r2_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:51 2023]
+Finished job 54.
+62 of 73 steps (85%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:53:51 2023]
+rule fastqc:
+    input: ../../FASTQ_files/PatuT/PatuT-7d-4-2_R1_001.fastq.gz
+    output: results/qc/day7_r4_0
+    log: logs/fastqc/day7_r4_0.log
+    jobid: 18
+    reason: Missing output files: results/qc/day7_r4_0
+    wildcards: replicate=day7_r4_0
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:53:58 2023]
+Finished job 6.
+63 of 73 steps (86%) done
+[Fri Sep 29 09:53:59 2023]
+Finished job 18.
+64 of 73 steps (88%) done
+[Fri Sep 29 09:54:00 2023]
+Finished job 2.
+65 of 73 steps (89%) done
+[Fri Sep 29 09:59:26 2023]
+Finished job 4.
+66 of 73 steps (90%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:59:26 2023]
+rule mageck_rra:
+    input: results/count/all.count.txt
+    output: results/test/Day_21.gene_summary.txt, results/test/Day_21.sgrna_summary.txt
+    log: logs/mageck/test/Day_21.log
+    jobid: 72
+    reason: Missing output files: results/test/Day_21.gene_summary.txt, results/test/Day_21.sgrna_summary.txt; Input files updated by another job: results/count/all.count.txt
+    wildcards: experiment=Day_21
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:59:26 2023]
+rule mageck_rra:
+    input: results/count/all.count.txt
+    output: results/test/Day_7.gene_summary.txt, results/test/Day_7.sgrna_summary.txt
+    log: logs/mageck/test/Day_7.log
+    jobid: 3
+    reason: Missing output files: results/test/Day_7.gene_summary.txt, results/test/Day_7.sgrna_summary.txt; Input files updated by another job: results/count/all.count.txt
+    wildcards: experiment=Day_7
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 29 09:59:26 2023]
+rule mageck_rra:
+    input: results/count/all.count.txt
+    output: results/test/Day_14.gene_summary.txt, results/test/Day_14.sgrna_summary.txt
+    log: logs/mageck/test/Day_14.log
+    jobid: 70
+    reason: Missing output files: results/test/Day_14.sgrna_summary.txt, results/test/Day_14.gene_summary.txt; Input files updated by another job: results/count/all.count.txt
+    wildcards: experiment=Day_14
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:59:29 2023]
+Finished job 70.
+67 of 73 steps (92%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:59:29 2023]
+rule vispr:
+    input: annotation/sgrnas.bed, results/test/Day_14.gene_summary.txt, results/test/Day_14.sgrna_summary.txt, results/count/all.count_normalized.txt, results/count/all.countsummary.txt, results/qc/day14_r1_0, results/qc/day14_r2_0, results/qc/day14_r3_0, results/qc/day14_r4_0, results/qc/day14_r5_0, results/qc/day21_r1_0, results/qc/day21_r2_0, results/qc/day21_r3_0, results/qc/day21_r4_0, results/qc/day21_r5_0, results/qc/day7_r1_0, results/qc/day7_r2_0, results/qc/day7_r3_0, results/qc/day7_r4_0, results/qc/day7_r5_0, results/qc/day14_Cas9_r1_0, results/qc/day14_Cas9_r2_0, results/qc/day14_Cas9_r3_0, results/qc/day14_Cas9_r4_0, results/qc/day14_Cas9_r5_0, results/qc/day21_Cas9_r1_0, results/qc/day21_Cas9_r2_0, results/qc/day21_Cas9_r3_0, results/qc/day21_Cas9_r4_0, results/qc/day21_Cas9_r5_0, results/qc/day7_Cas9_r1_0, results/qc/day7_Cas9_r2_0, results/qc/day7_Cas9_r3_0, results/qc/day7_Cas9_r4_0, results/qc/day7_Cas9_r5_0, results/qc/day0_r1_0, results/qc/day0_r2_0, results/qc/day14_r1_0_R2, results/qc/day14_r2_0_R2, results/qc/day14_r3_0_R2, results/qc/day14_r4_0_R2, results/qc/day14_r5_0_R2, results/qc/day21_r1_0_R2, results/qc/day21_r2_0_R2, results/qc/day21_r3_0_R2, results/qc/day21_r4_0_R2, results/qc/day21_r5_0_R2, results/qc/day7_r1_0_R2, results/qc/day7_r2_0_R2, results/qc/day7_r3_0_R2, results/qc/day7_r4_0_R2, results/qc/day7_r5_0_R2, results/qc/day14_Cas9_r1_0_R2, results/qc/day14_Cas9_r2_0_R2, results/qc/day14_Cas9_r3_0_R2, results/qc/day14_Cas9_r4_0_R2, results/qc/day14_Cas9_r5_0_R2, results/qc/day21_Cas9_r1_0_R2, results/qc/day21_Cas9_r2_0_R2, results/qc/day21_Cas9_r3_0_R2, results/qc/day21_Cas9_r4_0_R2, results/qc/day21_Cas9_r5_0_R2, results/qc/day7_Cas9_r1_0_R2, results/qc/day7_Cas9_r2_0_R2, results/qc/day7_Cas9_r3_0_R2, results/qc/day7_Cas9_r4_0_R2, results/qc/day7_Cas9_r5_0_R2, results/qc/day0_r1_0_R2, results/qc/day0_r2_0_R2
+    output: results/Day_14.vispr.yaml
+    jobid: 69
+    reason: Missing output files: results/Day_14.vispr.yaml; Input files updated by another job: results/qc/day7_r5_0_R2, results/qc/day21_r5_0, results/count/all.countsummary.txt, annotation/sgrnas.bed, results/qc/day21_r3_0, results/qc/day7_r4_0, results/qc/day7_Cas9_r2_0, results/qc/day14_r3_0_R2, results/qc/day7_r3_0_R2, results/qc/day21_r2_0, results/qc/day7_Cas9_r3_0_R2, results/qc/day7_r1_0_R2, results/qc/day21_r5_0_R2, results/qc/day14_r4_0, results/qc/day7_Cas9_r4_0_R2, results/qc/day14_r1_0_R2, results/qc/day14_Cas9_r3_0, results/qc/day14_r5_0, results/qc/day21_r4_0_R2, results/qc/day21_r3_0_R2, results/qc/day14_r1_0, results/qc/day21_r1_0, results/qc/day14_r2_0_R2, results/qc/day7_r5_0, results/qc/day7_Cas9_r5_0, results/qc/day21_Cas9_r4_0_R2, results/qc/day0_r2_0, results/qc/day14_Cas9_r1_0, results/qc/day14_Cas9_r4_0, results/qc/day14_Cas9_r5_0_R2, results/qc/day14_r5_0_R2, results/qc/day21_Cas9_r1_0, results/qc/day21_Cas9_r4_0, results/qc/day7_Cas9_r1_0_R2, results/qc/day7_Cas9_r4_0, results/test/Day_14.gene_summary.txt, results/qc/day7_r2_0_R2, results/qc/day14_r3_0, results/qc/day21_Cas9_r2_0_R2, results/qc/day14_Cas9_r5_0, results/qc/day14_r4_0_R2, results/test/Day_14.sgrna_summary.txt, results/qc/day14_Cas9_r2_0_R2, results/qc/day14_r2_0, results/qc/day21_Cas9_r1_0_R2, results/qc/day14_Cas9_r2_0, results/qc/day7_Cas9_r5_0_R2, results/qc/day21_Cas9_r3_0, results/qc/day7_Cas9_r2_0_R2, results/qc/day21_r4_0, results/qc/day14_Cas9_r3_0_R2, results/qc/day14_Cas9_r1_0_R2, results/qc/day7_Cas9_r3_0, results/qc/day0_r2_0_R2, results/qc/day21_Cas9_r5_0_R2, results/qc/day7_r4_0_R2, results/qc/day21_Cas9_r2_0, results/qc/day7_Cas9_r1_0, results/qc/day7_r2_0, results/qc/day0_r1_0, results/qc/day21_r1_0_R2, results/qc/day14_Cas9_r4_0_R2, results/qc/day21_Cas9_r3_0_R2, results/qc/day0_r1_0_R2, results/qc/day7_r1_0, results/count/all.count_normalized.txt, results/qc/day7_r3_0, results/qc/day21_Cas9_r5_0, results/qc/day21_r2_0_R2
+    wildcards: experiment=Day_14
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:59:29 2023]
+Finished job 3.
+68 of 73 steps (93%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:59:29 2023]
+rule vispr:
+    input: annotation/sgrnas.bed, results/test/Day_7.gene_summary.txt, results/test/Day_7.sgrna_summary.txt, results/count/all.count_normalized.txt, results/count/all.countsummary.txt, results/qc/day14_r1_0, results/qc/day14_r2_0, results/qc/day14_r3_0, results/qc/day14_r4_0, results/qc/day14_r5_0, results/qc/day21_r1_0, results/qc/day21_r2_0, results/qc/day21_r3_0, results/qc/day21_r4_0, results/qc/day21_r5_0, results/qc/day7_r1_0, results/qc/day7_r2_0, results/qc/day7_r3_0, results/qc/day7_r4_0, results/qc/day7_r5_0, results/qc/day14_Cas9_r1_0, results/qc/day14_Cas9_r2_0, results/qc/day14_Cas9_r3_0, results/qc/day14_Cas9_r4_0, results/qc/day14_Cas9_r5_0, results/qc/day21_Cas9_r1_0, results/qc/day21_Cas9_r2_0, results/qc/day21_Cas9_r3_0, results/qc/day21_Cas9_r4_0, results/qc/day21_Cas9_r5_0, results/qc/day7_Cas9_r1_0, results/qc/day7_Cas9_r2_0, results/qc/day7_Cas9_r3_0, results/qc/day7_Cas9_r4_0, results/qc/day7_Cas9_r5_0, results/qc/day0_r1_0, results/qc/day0_r2_0, results/qc/day14_r1_0_R2, results/qc/day14_r2_0_R2, results/qc/day14_r3_0_R2, results/qc/day14_r4_0_R2, results/qc/day14_r5_0_R2, results/qc/day21_r1_0_R2, results/qc/day21_r2_0_R2, results/qc/day21_r3_0_R2, results/qc/day21_r4_0_R2, results/qc/day21_r5_0_R2, results/qc/day7_r1_0_R2, results/qc/day7_r2_0_R2, results/qc/day7_r3_0_R2, results/qc/day7_r4_0_R2, results/qc/day7_r5_0_R2, results/qc/day14_Cas9_r1_0_R2, results/qc/day14_Cas9_r2_0_R2, results/qc/day14_Cas9_r3_0_R2, results/qc/day14_Cas9_r4_0_R2, results/qc/day14_Cas9_r5_0_R2, results/qc/day21_Cas9_r1_0_R2, results/qc/day21_Cas9_r2_0_R2, results/qc/day21_Cas9_r3_0_R2, results/qc/day21_Cas9_r4_0_R2, results/qc/day21_Cas9_r5_0_R2, results/qc/day7_Cas9_r1_0_R2, results/qc/day7_Cas9_r2_0_R2, results/qc/day7_Cas9_r3_0_R2, results/qc/day7_Cas9_r4_0_R2, results/qc/day7_Cas9_r5_0_R2, results/qc/day0_r1_0_R2, results/qc/day0_r2_0_R2
+    output: results/Day_7.vispr.yaml
+    jobid: 1
+    reason: Missing output files: results/Day_7.vispr.yaml; Input files updated by another job: results/qc/day7_r5_0_R2, results/qc/day21_r5_0, results/count/all.countsummary.txt, annotation/sgrnas.bed, results/test/Day_7.gene_summary.txt, results/qc/day21_r3_0, results/qc/day7_r4_0, results/qc/day7_Cas9_r2_0, results/qc/day14_r3_0_R2, results/qc/day21_r2_0, results/qc/day7_r3_0_R2, results/qc/day7_r1_0_R2, results/qc/day21_r5_0_R2, results/qc/day14_r4_0, results/qc/day7_Cas9_r3_0_R2, results/qc/day14_r1_0_R2, results/qc/day7_Cas9_r4_0_R2, results/qc/day14_Cas9_r3_0, results/qc/day14_r5_0, results/qc/day21_r4_0_R2, results/qc/day21_r3_0_R2, results/qc/day14_r1_0, results/qc/day21_r1_0, results/test/Day_7.sgrna_summary.txt, results/qc/day7_r5_0, results/qc/day14_r2_0_R2, results/qc/day7_Cas9_r5_0, results/qc/day21_Cas9_r4_0_R2, results/qc/day0_r2_0, results/qc/day14_Cas9_r1_0, results/qc/day14_Cas9_r4_0, results/qc/day14_Cas9_r5_0_R2, results/qc/day14_r5_0_R2, results/qc/day21_Cas9_r1_0, results/qc/day21_Cas9_r4_0, results/qc/day7_Cas9_r1_0_R2, results/qc/day7_Cas9_r4_0, results/qc/day7_r2_0_R2, results/qc/day14_r3_0, results/qc/day21_Cas9_r2_0_R2, results/qc/day14_Cas9_r5_0, results/qc/day14_r4_0_R2, results/qc/day14_Cas9_r2_0_R2, results/qc/day14_r2_0, results/qc/day21_Cas9_r1_0_R2, results/qc/day14_Cas9_r2_0, results/qc/day7_Cas9_r5_0_R2, results/qc/day21_Cas9_r3_0, results/qc/day7_Cas9_r2_0_R2, results/qc/day21_r4_0, results/qc/day14_Cas9_r3_0_R2, results/qc/day14_Cas9_r1_0_R2, results/qc/day7_Cas9_r3_0, results/qc/day0_r2_0_R2, results/qc/day21_Cas9_r5_0_R2, results/qc/day7_r4_0_R2, results/qc/day21_Cas9_r2_0, results/qc/day7_Cas9_r1_0, results/qc/day7_r2_0, results/qc/day0_r1_0, results/qc/day21_r1_0_R2, results/qc/day14_Cas9_r4_0_R2, results/qc/day21_Cas9_r3_0_R2, results/qc/day0_r1_0_R2, results/qc/day7_r1_0, results/count/all.count_normalized.txt, results/qc/day7_r3_0, results/qc/day21_Cas9_r5_0, results/qc/day21_r2_0_R2
+    wildcards: experiment=Day_7
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:59:29 2023]
+Finished job 72.
+69 of 73 steps (95%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:59:29 2023]
+rule vispr:
+    input: annotation/sgrnas.bed, results/test/Day_21.gene_summary.txt, results/test/Day_21.sgrna_summary.txt, results/count/all.count_normalized.txt, results/count/all.countsummary.txt, results/qc/day14_r1_0, results/qc/day14_r2_0, results/qc/day14_r3_0, results/qc/day14_r4_0, results/qc/day14_r5_0, results/qc/day21_r1_0, results/qc/day21_r2_0, results/qc/day21_r3_0, results/qc/day21_r4_0, results/qc/day21_r5_0, results/qc/day7_r1_0, results/qc/day7_r2_0, results/qc/day7_r3_0, results/qc/day7_r4_0, results/qc/day7_r5_0, results/qc/day14_Cas9_r1_0, results/qc/day14_Cas9_r2_0, results/qc/day14_Cas9_r3_0, results/qc/day14_Cas9_r4_0, results/qc/day14_Cas9_r5_0, results/qc/day21_Cas9_r1_0, results/qc/day21_Cas9_r2_0, results/qc/day21_Cas9_r3_0, results/qc/day21_Cas9_r4_0, results/qc/day21_Cas9_r5_0, results/qc/day7_Cas9_r1_0, results/qc/day7_Cas9_r2_0, results/qc/day7_Cas9_r3_0, results/qc/day7_Cas9_r4_0, results/qc/day7_Cas9_r5_0, results/qc/day0_r1_0, results/qc/day0_r2_0, results/qc/day14_r1_0_R2, results/qc/day14_r2_0_R2, results/qc/day14_r3_0_R2, results/qc/day14_r4_0_R2, results/qc/day14_r5_0_R2, results/qc/day21_r1_0_R2, results/qc/day21_r2_0_R2, results/qc/day21_r3_0_R2, results/qc/day21_r4_0_R2, results/qc/day21_r5_0_R2, results/qc/day7_r1_0_R2, results/qc/day7_r2_0_R2, results/qc/day7_r3_0_R2, results/qc/day7_r4_0_R2, results/qc/day7_r5_0_R2, results/qc/day14_Cas9_r1_0_R2, results/qc/day14_Cas9_r2_0_R2, results/qc/day14_Cas9_r3_0_R2, results/qc/day14_Cas9_r4_0_R2, results/qc/day14_Cas9_r5_0_R2, results/qc/day21_Cas9_r1_0_R2, results/qc/day21_Cas9_r2_0_R2, results/qc/day21_Cas9_r3_0_R2, results/qc/day21_Cas9_r4_0_R2, results/qc/day21_Cas9_r5_0_R2, results/qc/day7_Cas9_r1_0_R2, results/qc/day7_Cas9_r2_0_R2, results/qc/day7_Cas9_r3_0_R2, results/qc/day7_Cas9_r4_0_R2, results/qc/day7_Cas9_r5_0_R2, results/qc/day0_r1_0_R2, results/qc/day0_r2_0_R2
+    output: results/Day_21.vispr.yaml
+    jobid: 71
+    reason: Missing output files: results/Day_21.vispr.yaml; Input files updated by another job: results/qc/day7_r5_0_R2, results/qc/day21_r5_0, results/count/all.countsummary.txt, annotation/sgrnas.bed, results/qc/day21_r3_0, results/qc/day7_r4_0, results/qc/day7_Cas9_r2_0, results/qc/day14_r3_0_R2, results/qc/day7_r3_0_R2, results/qc/day21_r2_0, results/qc/day7_Cas9_r3_0_R2, results/qc/day7_r1_0_R2, results/qc/day21_r5_0_R2, results/qc/day14_r4_0, results/qc/day7_Cas9_r4_0_R2, results/qc/day14_r1_0_R2, results/qc/day14_Cas9_r3_0, results/qc/day14_r5_0, results/qc/day21_r4_0_R2, results/qc/day21_r3_0_R2, results/qc/day14_r1_0, results/qc/day21_r1_0, results/qc/day14_r2_0_R2, results/qc/day7_r5_0, results/qc/day7_Cas9_r5_0, results/qc/day21_Cas9_r4_0_R2, results/test/Day_21.gene_summary.txt, results/qc/day0_r2_0, results/qc/day14_Cas9_r1_0, results/test/Day_21.sgrna_summary.txt, results/qc/day14_Cas9_r4_0, results/qc/day14_Cas9_r5_0_R2, results/qc/day14_r5_0_R2, results/qc/day21_Cas9_r1_0, results/qc/day21_Cas9_r4_0, results/qc/day7_Cas9_r1_0_R2, results/qc/day7_Cas9_r4_0, results/qc/day7_r2_0_R2, results/qc/day14_r3_0, results/qc/day21_Cas9_r2_0_R2, results/qc/day14_Cas9_r5_0, results/qc/day14_r4_0_R2, results/qc/day14_Cas9_r2_0_R2, results/qc/day14_r2_0, results/qc/day21_Cas9_r1_0_R2, results/qc/day14_Cas9_r2_0, results/qc/day7_Cas9_r5_0_R2, results/qc/day21_Cas9_r3_0, results/qc/day7_Cas9_r2_0_R2, results/qc/day21_r4_0, results/qc/day14_Cas9_r3_0_R2, results/qc/day14_Cas9_r1_0_R2, results/qc/day7_Cas9_r3_0, results/qc/day0_r2_0_R2, results/qc/day21_Cas9_r5_0_R2, results/qc/day7_r4_0_R2, results/qc/day21_Cas9_r2_0, results/qc/day7_Cas9_r1_0, results/qc/day7_r2_0, results/qc/day0_r1_0, results/qc/day21_r1_0_R2, results/qc/day14_Cas9_r4_0_R2, results/qc/day21_Cas9_r3_0_R2, results/qc/day0_r1_0_R2, results/qc/day7_r1_0, results/count/all.count_normalized.txt, results/qc/day7_r3_0, results/qc/day21_Cas9_r5_0, results/qc/day21_r2_0_R2
+    wildcards: experiment=Day_21
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:59:30 2023]
+Finished job 69.
+70 of 73 steps (96%) done
+[Fri Sep 29 09:59:30 2023]
+Finished job 71.
+71 of 73 steps (97%) done
+[Fri Sep 29 09:59:30 2023]
+Finished job 1.
+72 of 73 steps (99%) done
+Select jobs to execute...
+
+[Fri Sep 29 09:59:30 2023]
+localrule all:
+    input: results/Day_7.vispr.yaml, results/Day_14.vispr.yaml, results/Day_21.vispr.yaml
+    jobid: 0
+    reason: Input files updated by another job: results/Day_14.vispr.yaml, results/Day_21.vispr.yaml, results/Day_7.vispr.yaml
+    resources: tmpdir=/tmp
+
+[Fri Sep 29 09:59:30 2023]
+Finished job 0.
+73 of 73 steps (100%) done
+Complete log: .snakemake/log/2023-09-29T095038.329836.snakemake.log

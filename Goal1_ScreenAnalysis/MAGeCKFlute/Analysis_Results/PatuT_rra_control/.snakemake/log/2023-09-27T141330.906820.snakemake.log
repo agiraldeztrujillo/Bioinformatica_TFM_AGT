@@ -1,0 +1,62 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+all               1
+mageck_qc         1
+mageck_rra        3
+vispr             3
+total             8
+
+Select jobs to execute...
+
+[Wed Sep 27 14:13:31 2023]
+rule mageck_rra:
+    input: ../../data/PatuT_count/PatuT.count.txt
+    output: results/test/Day_7.gene_summary.txt, results/test/Day_7.sgrna_summary.txt, results/test/Day_7.PatuT_7d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_7d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_7d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_7d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_7d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_14d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_14d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_14d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_14d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_14d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_21d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_21d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_21d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_21d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_21d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_7d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_7d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_7d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_7d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_7d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_14d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_14d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_14d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_14d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_14d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_21d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_21d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_21d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_21d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_7.PatuT_Cas9_21d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt
+    log: logs/mageck/test/Day_7.log
+    jobid: 2
+    reason: Missing output files: results/test/Day_7.gene_summary.txt, results/test/Day_7.sgrna_summary.txt
+    wildcards: experiment=Day_7
+    resources: tmpdir=/tmp
+
+
+[Wed Sep 27 14:13:31 2023]
+rule mageck_rra:
+    input: ../../data/PatuT_count/PatuT.count.txt
+    output: results/test/Day_21.gene_summary.txt, results/test/Day_21.sgrna_summary.txt, results/test/Day_21.PatuT_7d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_7d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_7d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_7d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_7d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_14d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_14d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_14d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_14d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_14d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_21d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_21d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_21d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_21d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_21d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_7d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_7d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_7d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_7d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_7d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_14d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_14d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_14d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_14d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_14d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_21d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_21d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_21d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_21d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_21.PatuT_Cas9_21d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt
+    log: logs/mageck/test/Day_21.log
+    jobid: 7
+    reason: Missing output files: results/test/Day_21.gene_summary.txt, results/test/Day_21.sgrna_summary.txt
+    wildcards: experiment=Day_21
+    resources: tmpdir=/tmp
+
+
+[Wed Sep 27 14:13:31 2023]
+rule mageck_rra:
+    input: ../../data/PatuT_count/PatuT.count.txt
+    output: results/test/Day_14.gene_summary.txt, results/test/Day_14.sgrna_summary.txt, results/test/Day_14.PatuT_7d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_7d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_7d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_7d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_7d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_14d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_14d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_14d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_14d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_14d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_21d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_21d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_21d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_21d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_21d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_7d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_7d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_7d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_7d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_7d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_14d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_14d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_14d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_14d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_14d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_21d_1_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_21d_2_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_21d_3_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_21d_4_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt, results/test/Day_14.PatuT_Cas9_21d_5_vs_pEPIGEN_1,pEPIGEN_2.sgrna_summary.txt
+    log: logs/mageck/test/Day_14.log
+    jobid: 5
+    reason: Missing output files: results/test/Day_14.gene_summary.txt, results/test/Day_14.sgrna_summary.txt
+    wildcards: experiment=Day_14
+    resources: tmpdir=/tmp
+
+
+[Wed Sep 27 14:13:31 2023]
+rule mageck_qc:
+    input: ../../data/PatuT_count/PatuT.count.txt
+    output: results/count/all.count_normalized.txt, results/count/all.countsummary.txt, results/count/all_countsummary.R, results/count/all_countsummary.Rnw
+    log: logs/mageck/count/all.log
+    jobid: 3
+    reason: Missing output files: results/count/all.count_normalized.txt
+    resources: tmpdir=/tmp
+
+[Wed Sep 27 14:13:33 2023]
+Finished job 3.
+1 of 8 steps (12%) done
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2023-09-27T141330.906820.snakemake.log

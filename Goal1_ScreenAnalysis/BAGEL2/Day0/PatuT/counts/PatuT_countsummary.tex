@@ -1,0 +1,228 @@
+% This is a template file for Sweave used in MAGeCK
+% Author: Wei Li, Shirley Liu lab
+% Do not modify lines beginning with "#__".
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage[tableposition=top]{caption}
+\usepackage{ifthen}
+\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+% \usepackage{longtable}
+
+\usepackage{Sweave}
+\begin{document}
+\setkeys{Gin}{width=0.9\textwidth}
+
+\title{MAGeCK Count Report}
+\author{Wei Li}
+
+\maketitle
+
+
+\tableofcontents
+
+\section{Summary}
+
+%Function definition
+
+%__FILE_SUMMARY__
+
+The statistics of comparisons are listed in Table 1 and Table 2.
+The corresponding fastq files in each row are listed in Table 3.
+
+% latex table generated in R 4.3.1 by xtable 1.8-4 package
+% Tue Oct 31 12:40:08 2023
+\begin{table}[ht]
+\centering
+\begin{tabular}{ccccc}
+  \hline
+ & Label & Reads & Mapped & Percentage \\ 
+  \hline
+1 & day0\_r1 & 100078 & 97209 & 0.97 \\ 
+  2 & day0\_r2 & 100125 & 97265 & 0.97 \\ 
+  3 & PatuT\_day7\_r1 & 84601 & 82749 & 0.98 \\ 
+  4 & PatuT\_day7\_r2 & 96400 & 93640 & 0.97 \\ 
+  5 & PatuT\_day7\_r3 & 107560 & 105526 & 0.98 \\ 
+  6 & PatuT\_day7\_r4 & 86484 & 84965 & 0.98 \\ 
+  7 & PatuT\_day7\_r5 & 83408 & 81755 & 0.98 \\ 
+  8 & PatuT\_day14\_r1 & 98304 & 95302 & 0.97 \\ 
+  9 & PatuT\_day14\_r2 & 95266 & 90572 & 0.95 \\ 
+  10 & PatuT\_day14\_r3 & 104897 & 100766 & 0.96 \\ 
+  11 & PatuT\_day14\_r4 & 63246 & 59886 & 0.95 \\ 
+  12 & PatuT\_day14\_r5 & 75441 & 72790 & 0.96 \\ 
+  13 & PatuT\_day21\_r1 & 80619 & 78619 & 0.98 \\ 
+  14 & PatuT\_day21\_r2 & 69621 & 67766 & 0.97 \\ 
+  15 & PatuT\_day21\_r3 & 61609 & 59535 & 0.97 \\ 
+  16 & PatuT\_day21\_r4 & 77185 & 74668 & 0.97 \\ 
+  17 & PatuT\_day21\_r5 & 77627 & 75136 & 0.97 \\ 
+  18 & PatuT\_Cas9\_day7\_r1 & 83523 & 81452 & 0.98 \\ 
+  19 & PatuT\_Cas9\_day7\_r2 & 55712 & 54067 & 0.97 \\ 
+  20 & PatuT\_Cas9\_day7\_r3 & 63917 & 61970 & 0.97 \\ 
+  21 & PatuT\_Cas9\_day7\_r4 & 68712 & 66747 & 0.97 \\ 
+  22 & PatuT\_Cas9\_day7\_r5 & 48906 & 47451 & 0.97 \\ 
+  23 & PatuT\_Cas9\_day14\_r1 & 52057 & 50549 & 0.97 \\ 
+  24 & PatuT\_Cas9\_day14\_r2 & 72159 & 70136 & 0.97 \\ 
+  25 & PatuT\_Cas9\_day14\_r3 & 75894 & 73542 & 0.97 \\ 
+  26 & PatuT\_Cas9\_day14\_r4 & 80783 & 78521 & 0.97 \\ 
+  27 & PatuT\_Cas9\_day14\_r5 & 62168 & 60714 & 0.98 \\ 
+  28 & PatuT\_Cas9\_day21\_r1 & 66029 & 64633 & 0.98 \\ 
+  29 & PatuT\_Cas9\_day21\_r2 & 67907 & 66611 & 0.98 \\ 
+  30 & PatuT\_Cas9\_day21\_r3 & 65145 & 63964 & 0.98 \\ 
+  31 & PatuT\_Cas9\_day21\_r4 & 68503 & 67097 & 0.98 \\ 
+  32 & PatuT\_Cas9\_day21\_r5 & 75363 & 73876 & 0.98 \\ 
+   \hline
+\end{tabular}
+\caption{Summary of comparisons} 
+\label{tab:one}
+\end{table}
+% latex table generated in R 4.3.1 by xtable 1.8-4 package
+% Tue Oct 31 12:40:08 2023
+\begin{table}[ht]
+\centering
+\begin{tabular}{ccccc}
+  \hline
+ & Label & TotalsgRNA & ZeroCounts & GiniIndex \\ 
+  \hline
+1 & day0\_r1 & 1574 & 50 & 0.15 \\ 
+  2 & day0\_r2 & 1574 & 54 & 0.15 \\ 
+  3 & PatuT\_day7\_r1 & 1574 & 72 & 0.14 \\ 
+  4 & PatuT\_day7\_r2 & 1574 & 65 & 0.14 \\ 
+  5 & PatuT\_day7\_r3 & 1574 & 71 & 0.14 \\ 
+  6 & PatuT\_day7\_r4 & 1574 & 71 & 0.15 \\ 
+  7 & PatuT\_day7\_r5 & 1574 & 68 & 0.14 \\ 
+  8 & PatuT\_day14\_r1 & 1574 & 75 & 0.14 \\ 
+  9 & PatuT\_day14\_r2 & 1574 & 75 & 0.15 \\ 
+  10 & PatuT\_day14\_r3 & 1574 & 78 & 0.14 \\ 
+  11 & PatuT\_day14\_r4 & 1574 & 81 & 0.16 \\ 
+  12 & PatuT\_day14\_r5 & 1574 & 71 & 0.15 \\ 
+  13 & PatuT\_day21\_r1 & 1574 & 85 & 0.15 \\ 
+  14 & PatuT\_day21\_r2 & 1574 & 74 & 0.16 \\ 
+  15 & PatuT\_day21\_r3 & 1574 & 82 & 0.16 \\ 
+  16 & PatuT\_day21\_r4 & 1574 & 74 & 0.15 \\ 
+  17 & PatuT\_day21\_r5 & 1574 & 85 & 0.15 \\ 
+  18 & PatuT\_Cas9\_day7\_r1 & 1574 & 81 & 0.15 \\ 
+  19 & PatuT\_Cas9\_day7\_r2 & 1574 & 82 & 0.16 \\ 
+  20 & PatuT\_Cas9\_day7\_r3 & 1574 & 83 & 0.15 \\ 
+  21 & PatuT\_Cas9\_day7\_r4 & 1574 & 77 & 0.15 \\ 
+  22 & PatuT\_Cas9\_day7\_r5 & 1574 & 85 & 0.17 \\ 
+  23 & PatuT\_Cas9\_day14\_r1 & 1574 & 73 & 0.16 \\ 
+  24 & PatuT\_Cas9\_day14\_r2 & 1574 & 85 & 0.16 \\ 
+  25 & PatuT\_Cas9\_day14\_r3 & 1574 & 74 & 0.15 \\ 
+  26 & PatuT\_Cas9\_day14\_r4 & 1574 & 79 & 0.15 \\ 
+  27 & PatuT\_Cas9\_day14\_r5 & 1574 & 90 & 0.16 \\ 
+  28 & PatuT\_Cas9\_day21\_r1 & 1574 & 81 & 0.16 \\ 
+  29 & PatuT\_Cas9\_day21\_r2 & 1574 & 77 & 0.16 \\ 
+  30 & PatuT\_Cas9\_day21\_r3 & 1574 & 83 & 0.16 \\ 
+  31 & PatuT\_Cas9\_day21\_r4 & 1574 & 88 & 0.16 \\ 
+  32 & PatuT\_Cas9\_day21\_r5 & 1574 & 82 & 0.15 \\ 
+   \hline
+\end{tabular}
+\caption{Summary of comparisons} 
+\label{tab:two}
+\end{table}
+
+
+
+
+% latex table generated in R 4.3.1 by xtable 1.8-4 package
+% Tue Oct 31 12:40:08 2023
+\begin{table}[ht]
+\centering
+\begin{tabular}{cp{9cm}c}
+  \hline
+ & File & Label \\ 
+  \hline
+1 & pEPIGEN-1\_R1\_001.fastq.gz & day0\_r1 \\ 
+  2 & pEPIGEN2\_R1\_001.fastq.gz & day0\_r2 \\ 
+  3 & PatuT-7d-1\_R1\_001.fastq.gz & PatuT\_day7\_r1 \\ 
+  4 & PatuT-7d-2\_R1\_001.fastq.gz & PatuT\_day7\_r2 \\ 
+  5 & PatuT-7d-3\_R1\_001.fastq.gz & PatuT\_day7\_r3 \\ 
+  6 & PatuT-7d-4-2\_R1\_001.fastq.gz & PatuT\_day7\_r4 \\ 
+  7 & PatuT-7d-5\_R1\_001.fastq.gz & PatuT\_day7\_r5 \\ 
+  8 & PatuT-14d-1\_R1\_001.fastq.gz & PatuT\_day14\_r1 \\ 
+  9 & PatuT-14d-2\_R1\_001.fastq.gz & PatuT\_day14\_r2 \\ 
+  10 & PatuT-14d-3\_R1\_001.fastq.gz & PatuT\_day14\_r3 \\ 
+  11 & PatuT-14d-4\_R1\_001.fastq.gz & PatuT\_day14\_r4 \\ 
+  12 & PatuT-14d-5\_R1\_001.fastq.gz & PatuT\_day14\_r5 \\ 
+  13 & PatuT-21d-1\_R1\_001.fastq.gz & PatuT\_day21\_r1 \\ 
+  14 & PatuT-21d-2\_R1\_001.fastq.gz & PatuT\_day21\_r2 \\ 
+  15 & PatuT-21d-3\_R1\_001.fastq.gz & PatuT\_day21\_r3 \\ 
+  16 & PatuT-21d-4\_R1\_001.fastq.gz & PatuT\_day21\_r4 \\ 
+  17 & PatuT-21d-5\_R1\_001.fastq.gz & PatuT\_day21\_r5 \\ 
+  18 & PatuT-Cas9-7d-1\_R1\_001.fastq.gz & PatuT\_Cas9\_day7\_r1 \\ 
+  19 & PatuT-Cas9-7d-2\_R1\_001.fastq.gz & PatuT\_Cas9\_day7\_r2 \\ 
+  20 & PatuT-Cas9-7d-3\_R1\_001.fastq.gz & PatuT\_Cas9\_day7\_r3 \\ 
+  21 & PatuT-Cas9-7d-4\_R1\_001.fastq.gz & PatuT\_Cas9\_day7\_r4 \\ 
+  22 & PatuT-Cas9-7d-5\_R1\_001.fastq.gz & PatuT\_Cas9\_day7\_r5 \\ 
+  23 & PatuT-Cas9-14d-1\_R1\_001.fastq.gz & PatuT\_Cas9\_day14\_r1 \\ 
+  24 & PatuT-Cas9-14d-2\_R1\_001.fastq.gz & PatuT\_Cas9\_day14\_r2 \\ 
+  25 & PatuT-Cas9-14d-3\_R1\_001.fastq.gz & PatuT\_Cas9\_day14\_r3 \\ 
+  26 & PatuT-Cas9-14d-4\_R1\_001.fastq.gz & PatuT\_Cas9\_day14\_r4 \\ 
+  27 & PatuT-Cas9-14d-5\_R1\_001.fastq.gz & PatuT\_Cas9\_day14\_r5 \\ 
+  28 & PatuT-Cas9-21d-1\_R1\_001.fastq.gz & PatuT\_Cas9\_day21\_r1 \\ 
+  29 & PatuT-Cas9-21d-2\_R1\_001.fastq.gz & PatuT\_Cas9\_day21\_r2 \\ 
+  30 & PatuT-Cas9-21d-3\_R1\_001.fastq.gz & PatuT\_Cas9\_day21\_r3 \\ 
+  31 & PatuT-Cas9-21d-4\_R1\_001.fastq.gz & PatuT\_Cas9\_day21\_r4 \\ 
+  32 & PatuT-Cas9-21d-5\_R1\_001.fastq.gz & PatuT\_Cas9\_day21\_r5 \\ 
+   \hline
+\end{tabular}
+\caption{Summary of samples} 
+\label{tab:three}
+\end{table}
+
+
+
+The meanings of the columns are as follows.
+
+\begin{itemize}
+\item \textbf{Row}: The row number in the table;
+\item \textbf{File}: The filename of fastq file;
+\item \textbf{Label}: Assigned label;
+\item \textbf{Reads}: The total read count in the fastq file;
+\item \textbf{Mapped}: Reads that can be mapped to gRNA library;
+\item \textbf{Percentage}: The percentage of mapped reads;
+\item \textbf{TotalsgRNAs}: The number of sgRNAs in the library; 
+\item \textbf{ZeroCounts}: The number of sgRNA with 0 read counts;
+\item \textbf{GiniIndex}: The Gini Index of the read count distribution. Gini index can be used to measure the evenness of the read counts, and a smaller value means a more even distribution of the read counts.
+\end{itemize}
+
+
+
+\newpage\section{Normalized read count distribution of all samples}
+The following figure shows the distribution of median-normalized read counts in all samples.
+
+
+\includegraphics{PatuT_countsummary-005}
+
+The following figure shows the histogram of median-normalized read counts in all samples.
+
+
+\includegraphics{PatuT_countsummary-006}
+
+
+\newpage\section{Principle Component Analysis}
+The following figure shows the first 2 principle components (PCs) from the Principle Component Analysis (PCA), and the percentage of variances explained by the top PCs.
+
+
+
+\includegraphics{PatuT_countsummary-007}
+
+\includegraphics{PatuT_countsummary-008}
+
+
+\newpage\section{Sample clustering}
+The following figure shows the sample clustering result.
+
+
+\includegraphics{PatuT_countsummary-009}
+
+%__INDIVIDUAL_PAGE__
+
+
+
+
+
+\end{document}
+

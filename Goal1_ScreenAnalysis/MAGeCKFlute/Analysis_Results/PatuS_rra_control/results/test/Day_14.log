@@ -1,0 +1,83 @@
+INFO  @ Fri, 13 Oct 2023 16:17:08: Parameters: /home/antonio_gt/anaconda3/envs/mamba/envs/mageck-vispr/bin/mageck test --norm-method median --output-prefix results/test/Day_14 --count-table results/count/all.count.txt --control-id day14_r1,day14_r2,day14_r3,day14_r4,day14_r5 --treatment-id day14_Cas9_r1,day14_Cas9_r2,day14_Cas9_r3,day14_Cas9_r5 --cnv-norm ../../data/cnv_data/PatuS_CNV.txt --cell-line PATU8988S_PANCREAS 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Welcome to MAGeCK v0.5.9.5. Command: test 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Loading count table from results/count/all.count.txt  
+INFO  @ Fri, 13 Oct 2023 16:17:08: Processing 1 lines.. 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Parsing error in line 1 (usually the header line). Skip this line. 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Loaded 1574 records. 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Loading Rnw template file: /home/antonio_gt/anaconda3/envs/mamba/envs/mageck-vispr/lib/python3.10/site-packages/mageck/test_report.Rmd. 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Setting up the visualization module... 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Loading R template file: /home/antonio_gt/anaconda3/envs/mamba/envs/mageck-vispr/lib/python3.10/site-packages/mageck/plot_template.RTemplate. 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Loading R template file: /home/antonio_gt/anaconda3/envs/mamba/envs/mageck-vispr/lib/python3.10/site-packages/mageck/plot_template_indvgene.RTemplate. 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Loading Rnw template file: /home/antonio_gt/anaconda3/envs/mamba/envs/mageck-vispr/lib/python3.10/site-packages/mageck/plot_template.Rnw. 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Setting up the visualization module... 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Given sample labels: day14_Cas9_r1,day14_Cas9_r2,day14_Cas9_r3,day14_Cas9_r5 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Converted index: 15 16 17 18 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Treatment samples:day14_Cas9_r1,day14_Cas9_r2,day14_Cas9_r3,day14_Cas9_r5 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Treatment sample index:15,16,17,18 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Given sample labels: day14_r1,day14_r2,day14_r3,day14_r4,day14_r5 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Converted index: 0 1 2 3 4 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Control samples:day14_r1,day14_r2,day14_r3,day14_r4,day14_r5 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Control sample index:0,1,2,3,4 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Initial (total) size factor: 1.1429956100062992 1.141552965008132 1.2451221584873593 0.841494442003578 0.7177010700386722 0.960484504032344 1.3418757627169093 1.0243969370115762 0.9076701729606502 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Median factor: 1.1330825802378504 1.141723434550888 1.2532054617320694 0.8392572706644645 0.7126512350143603 0.9554851513447145 1.3292621143851067 1.02526485659998 0.9180796966745635 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Final size factor: 1.1330825802378504 1.141723434550888 1.2532054617320694 0.8392572706644645 0.7126512350143603 0.9554851513447145 1.3292621143851067 1.02526485659998 0.9180796966745635 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Detecting outliers from variance estimation.. Avg read count:[36.535149905628415], Var: [3146.5957164904476] 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Skipping 5 sgRNAs from variance calculation because of their extreme high counts (> 4* STD (mean counts) ). 
+DEBUG @ Fri, 13 Oct 2023 16:17:08: Adjusted model: 1.1136947413904092	0.4174805505415882 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Before RRA, 62 sgRNAs are removed with zero counts in both group(s). 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Use qnorm to reversely calculate sgRNA scores ... 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Performing copy number normalization. 
+INFO  @ Fri, 13 Oct 2023 16:17:08: Normalizing by copy number with PATU8988S_PANCREAS as the reference cell line. 
+DEBUG @ Fri, 13 Oct 2023 16:17:09: lower test FDR cutoff: 0.20238095238095238 
+DEBUG @ Fri, 13 Oct 2023 16:17:09: higher test FDR cutoff: 0.22552910052910052 
+INFO  @ Fri, 13 Oct 2023 16:17:09: Running command: RRA -i results/test/Day_14.plow.txt -o results/test/Day_14.gene.low.txt -p 0.20238095238095238 --skip-gene NA --skip-gene na  
+INFO  @ Fri, 13 Oct 2023 16:17:09: Command message: 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Welcome to RRA v 0.5.9. 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Skipping gene NA for permutation ... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Skipping gene na for permutation ... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Reading input file... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Summary: 1512 sgRNAs, 396 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Computing lo-values for each group... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Computing false discovery rate... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Increase the number of permutations to 253 to get precise p values. To avoid this, use the --permutation option. 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Permuting genes with 1 sgRNAs... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Permuting genes with 2 sgRNAs... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Permuting genes with 3 sgRNAs... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Permuting genes with 4 sgRNAs... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Number of genes under FDR adjustment: 396 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Saving to output file... 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   RRA completed. 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Groups deletion complete. 
+INFO  @ Fri, 13 Oct 2023 16:17:09:   Lists deletion complete. 
+INFO  @ Fri, 13 Oct 2023 16:17:09:    
+INFO  @ Fri, 13 Oct 2023 16:17:09: End command message. 
+INFO  @ Fri, 13 Oct 2023 16:17:09: Running command: RRA -i results/test/Day_14.phigh.txt -o results/test/Day_14.gene.high.txt -p 0.22552910052910052 --skip-gene NA --skip-gene na  
+INFO  @ Fri, 13 Oct 2023 16:17:10: Command message: 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Welcome to RRA v 0.5.9. 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Skipping gene NA for permutation ... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Skipping gene na for permutation ... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Reading input file... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Summary: 1512 sgRNAs, 396 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Computing lo-values for each group... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Computing false discovery rate... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Increase the number of permutations to 253 to get precise p values. To avoid this, use the --permutation option. 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Permuting genes with 1 sgRNAs... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Permuting genes with 2 sgRNAs... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Permuting genes with 3 sgRNAs... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Permuting genes with 4 sgRNAs... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Number of genes under FDR adjustment: 396 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Saving to output file... 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   RRA completed. 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Groups deletion complete. 
+INFO  @ Fri, 13 Oct 2023 16:17:10:   Lists deletion complete. 
+INFO  @ Fri, 13 Oct 2023 16:17:10:    
+INFO  @ Fri, 13 Oct 2023 16:17:10: End command message. 
+DEBUG @ Fri, 13 Oct 2023 16:17:10: Sorting the merged items by negative selection... 
+INFO  @ Fri, 13 Oct 2023 16:17:10: Loading top 10 genes from results/test/Day_14.gene.low.txt: MARCH5,PCMT1,TRIM33,PRMT8,PRDM9,CHAF1B,CARM1,KDM5D,SP140,UHRF1 
+DEBUG @ Fri, 13 Oct 2023 16:17:10: Column index:3 
+INFO  @ Fri, 13 Oct 2023 16:17:10: Loading top 10 genes from results/test/Day_14.gene.high.txt: MBD5,SMNDC1,CDYL,C14orf169,TRIM33,CHD8,NSD1,ATAT1,UBE2A,ATRX 
+DEBUG @ Fri, 13 Oct 2023 16:17:10: Column index:9 
+INFO  @ Fri, 13 Oct 2023 16:17:10: Running command: rm results/test/Day_14.plow.txt 
+INFO  @ Fri, 13 Oct 2023 16:17:10: Running command: rm results/test/Day_14.phigh.txt 
+INFO  @ Fri, 13 Oct 2023 16:17:10: Running command: rm results/test/Day_14.gene.low.txt 
+INFO  @ Fri, 13 Oct 2023 16:17:10: Running command: rm results/test/Day_14.gene.high.txt 

@@ -1,0 +1,225 @@
+% This is a template file for Sweave used in MAGeCK
+% Author: Wei Li, Shirley Liu lab
+% Do not modify lines beginning with "#__".
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage[tableposition=top]{caption}
+\usepackage{ifthen}
+\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+% \usepackage{longtable}
+
+\usepackage{Sweave}
+\begin{document}
+\setkeys{Gin}{width=0.9\textwidth}
+
+\title{MAGeCK Count Report}
+\author{Wei Li}
+
+\maketitle
+
+
+\tableofcontents
+
+\section{Summary}
+
+%Function definition
+
+%__FILE_SUMMARY__
+
+The statistics of comparisons are listed in Table 1 and Table 2.
+The corresponding fastq files in each row are listed in Table 3.
+
+% latex table generated in R 4.3.1 by xtable 1.8-4 package
+% Tue Oct 31 12:49:35 2023
+\begin{table}[ht]
+\centering
+\begin{tabular}{ccccc}
+  \hline
+ & Label & Reads & Mapped & Percentage \\ 
+  \hline
+1 & day0\_r1 & 100078 & 97209 & 0.97 \\ 
+  2 & day0\_r2 & 100125 & 97265 & 0.97 \\ 
+  3 & PatuS\_day7\_r1 & 81355 & 79408 & 0.98 \\ 
+  4 & PatuS\_day7\_r2 & 91627 & 90246 & 0.98 \\ 
+  5 & PatuS\_day7\_r3 & 57704 & 51136 & 0.89 \\ 
+  6 & PatuS\_day7\_r4 & 58286 & 56830 & 0.98 \\ 
+  7 & PatuS\_day7\_r5 & 66168 & 64694 & 0.98 \\ 
+  8 & PatuS\_day14\_r1 & 58084 & 56973 & 0.98 \\ 
+  9 & PatuS\_day14\_r2 & 58188 & 57045 & 0.98 \\ 
+  10 & PatuS\_day14\_r3 & 54151 & 52300 & 0.97 \\ 
+  11 & PatuS\_day14\_r4 & 79506 & 77386 & 0.97 \\ 
+  12 & PatuS\_day14\_r5 & 92607 & 90734 & 0.98 \\ 
+  13 & PatuS\_day21\_r1 & 57533 & 56520 & 0.98 \\ 
+  14 & PatuS\_day21\_r2 & 62832 & 57738 & 0.92 \\ 
+  15 & PatuS\_day21\_r3 & 72834 & 71002 & 0.97 \\ 
+  16 & PatuS\_day21\_r4 & 55996 & 54747 & 0.98 \\ 
+  17 & PatuS\_day21\_r5 & 62681 & 61402 & 0.98 \\ 
+  18 & PatuS\_Cas9\_day7\_r1 & 62942 & 61514 & 0.98 \\ 
+  19 & PatuS\_Cas9\_day7\_r2 & 81665 & 79208 & 0.97 \\ 
+  20 & PatuS\_Cas9\_day7\_r3 & 92199 & 90042 & 0.98 \\ 
+  21 & PatuS\_Cas9\_day7\_r4 & 51461 & 50090 & 0.97 \\ 
+  22 & PatuS\_Cas9\_day7\_r5 & 55411 & 53256 & 0.96 \\ 
+  23 & PatuS\_Cas9\_day14\_r1 & 69062 & 67799 & 0.98 \\ 
+  24 & PatuS\_Cas9\_day14\_r2 & 49541 & 48529 & 0.98 \\ 
+  25 & PatuS\_Cas9\_day14\_r3 & 65089 & 63569 & 0.98 \\ 
+  26 & PatuS\_Cas9\_day14\_r5 & 76590 & 71744 & 0.94 \\ 
+  27 & PatuS\_Cas9\_day21\_r1 & 79211 & 77892 & 0.98 \\ 
+  28 & PatuS\_Cas9\_day21\_r2 & 61523 & 60003 & 0.98 \\ 
+  29 & PatuS\_Cas9\_day21\_r3 & 72065 & 70291 & 0.98 \\ 
+  30 & PatuS\_Cas9\_day21\_r4 & 71311 & 68876 & 0.97 \\ 
+  31 & PatuS\_Cas9\_day21\_r5 & 66995 & 66148 & 0.99 \\ 
+   \hline
+\end{tabular}
+\caption{Summary of comparisons} 
+\label{tab:one}
+\end{table}
+% latex table generated in R 4.3.1 by xtable 1.8-4 package
+% Tue Oct 31 12:49:35 2023
+\begin{table}[ht]
+\centering
+\begin{tabular}{ccccc}
+  \hline
+ & Label & TotalsgRNA & ZeroCounts & GiniIndex \\ 
+  \hline
+1 & day0\_r1 & 1574 & 50 & 0.15 \\ 
+  2 & day0\_r2 & 1574 & 54 & 0.15 \\ 
+  3 & PatuS\_day7\_r1 & 1574 & 78 & 0.15 \\ 
+  4 & PatuS\_day7\_r2 & 1574 & 66 & 0.14 \\ 
+  5 & PatuS\_day7\_r3 & 1574 & 82 & 0.16 \\ 
+  6 & PatuS\_day7\_r4 & 1574 & 84 & 0.16 \\ 
+  7 & PatuS\_day7\_r5 & 1574 & 89 & 0.16 \\ 
+  8 & PatuS\_day14\_r1 & 1574 & 79 & 0.16 \\ 
+  9 & PatuS\_day14\_r2 & 1574 & 86 & 0.16 \\ 
+  10 & PatuS\_day14\_r3 & 1574 & 84 & 0.16 \\ 
+  11 & PatuS\_day14\_r4 & 1574 & 82 & 0.15 \\ 
+  12 & PatuS\_day14\_r5 & 1574 & 74 & 0.15 \\ 
+  13 & PatuS\_day21\_r1 & 1574 & 77 & 0.16 \\ 
+  14 & PatuS\_day21\_r2 & 1574 & 80 & 0.16 \\ 
+  15 & PatuS\_day21\_r3 & 1574 & 68 & 0.15 \\ 
+  16 & PatuS\_day21\_r4 & 1574 & 77 & 0.16 \\ 
+  17 & PatuS\_day21\_r5 & 1574 & 75 & 0.16 \\ 
+  18 & PatuS\_Cas9\_day7\_r1 & 1574 & 78 & 0.16 \\ 
+  19 & PatuS\_Cas9\_day7\_r2 & 1574 & 79 & 0.15 \\ 
+  20 & PatuS\_Cas9\_day7\_r3 & 1574 & 78 & 0.15 \\ 
+  21 & PatuS\_Cas9\_day7\_r4 & 1574 & 86 & 0.17 \\ 
+  22 & PatuS\_Cas9\_day7\_r5 & 1574 & 77 & 0.16 \\ 
+  23 & PatuS\_Cas9\_day14\_r1 & 1574 & 79 & 0.15 \\ 
+  24 & PatuS\_Cas9\_day14\_r2 & 1574 & 72 & 0.16 \\ 
+  25 & PatuS\_Cas9\_day14\_r3 & 1574 & 74 & 0.15 \\ 
+  26 & PatuS\_Cas9\_day14\_r5 & 1574 & 88 & 0.15 \\ 
+  27 & PatuS\_Cas9\_day21\_r1 & 1574 & 77 & 0.15 \\ 
+  28 & PatuS\_Cas9\_day21\_r2 & 1574 & 76 & 0.16 \\ 
+  29 & PatuS\_Cas9\_day21\_r3 & 1574 & 78 & 0.15 \\ 
+  30 & PatuS\_Cas9\_day21\_r4 & 1574 & 83 & 0.15 \\ 
+  31 & PatuS\_Cas9\_day21\_r5 & 1574 & 75 & 0.15 \\ 
+   \hline
+\end{tabular}
+\caption{Summary of comparisons} 
+\label{tab:two}
+\end{table}
+
+
+
+
+% latex table generated in R 4.3.1 by xtable 1.8-4 package
+% Tue Oct 31 12:49:35 2023
+\begin{table}[ht]
+\centering
+\begin{tabular}{cp{9cm}c}
+  \hline
+ & File & Label \\ 
+  \hline
+1 & pEPIGEN-1\_R1\_001.fastq.gz & day0\_r1 \\ 
+  2 & pEPIGEN2\_R1\_001.fastq.gz & day0\_r2 \\ 
+  3 & PatuS-7d-1\_R1\_001.fastq.gz & PatuS\_day7\_r1 \\ 
+  4 & PatuS-7d-2-2\_R1\_001.fastq.gz & PatuS\_day7\_r2 \\ 
+  5 & PatuS-7d-3\_R1\_001.fastq.gz & PatuS\_day7\_r3 \\ 
+  6 & PatuS-7d-4\_R1\_001.fastq.gz & PatuS\_day7\_r4 \\ 
+  7 & PatuS-7d-5\_R1\_001.fastq.gz & PatuS\_day7\_r5 \\ 
+  8 & PatuS-14d-1\_R1\_001.fastq.gz & PatuS\_day14\_r1 \\ 
+  9 & PatuS-14d-2\_R1\_001.fastq.gz & PatuS\_day14\_r2 \\ 
+  10 & PatuS-14d-3\_R1\_001.fastq.gz & PatuS\_day14\_r3 \\ 
+  11 & PatuS-14d-4\_R1\_001.fastq.gz & PatuS\_day14\_r4 \\ 
+  12 & PatuS-14d-5\_R1\_001.fastq.gz & PatuS\_day14\_r5 \\ 
+  13 & PatuS-21d-1-2\_R1\_001.fastq.gz & PatuS\_day21\_r1 \\ 
+  14 & PatuS-21d-2\_R1\_001.fastq.gz & PatuS\_day21\_r2 \\ 
+  15 & PatuS-21d-3\_R1\_001.fastq.gz & PatuS\_day21\_r3 \\ 
+  16 & PatuS-21d-4\_R1\_001.fastq.gz & PatuS\_day21\_r4 \\ 
+  17 & PatuS-21d-5\_R1\_001.fastq.gz & PatuS\_day21\_r5 \\ 
+  18 & PatuS-Cas9-7d-1\_R1\_001.fastq.gz & PatuS\_Cas9\_day7\_r1 \\ 
+  19 & PatuS-Cas9-7d-2\_R1\_001.fastq.gz & PatuS\_Cas9\_day7\_r2 \\ 
+  20 & PatuS-Cas9-7d-3\_R1\_001.fastq.gz & PatuS\_Cas9\_day7\_r3 \\ 
+  21 & PatuS-Cas9-7d-4\_R1\_001.fastq.gz & PatuS\_Cas9\_day7\_r4 \\ 
+  22 & PatuS-Cas9-7d-5\_R1\_001.fastq.gz & PatuS\_Cas9\_day7\_r5 \\ 
+  23 & PatuS-Cas9-14d-1\_R1\_001.fastq.gz & PatuS\_Cas9\_day14\_r1 \\ 
+  24 & PatuS-Cas9-14d-2\_R1\_001.fastq.gz & PatuS\_Cas9\_day14\_r2 \\ 
+  25 & PatuS-Cas9-14d-3\_R1\_001.fastq.gz & PatuS\_Cas9\_day14\_r3 \\ 
+  26 & PatuS-Cas9-14d-5\_R1\_001.fastq.gz & PatuS\_Cas9\_day14\_r5 \\ 
+  27 & PatuS-Cas9-21d-1\_R1\_001.fastq.gz & PatuS\_Cas9\_day21\_r1 \\ 
+  28 & PatuS-Cas9-21d-2\_R1\_001.fastq.gz & PatuS\_Cas9\_day21\_r2 \\ 
+  29 & PatuS-Cas9-21d-3\_R1\_001.fastq.gz & PatuS\_Cas9\_day21\_r3 \\ 
+  30 & PatuS-Cas9-21d-4\_R1\_001.fastq.gz & PatuS\_Cas9\_day21\_r4 \\ 
+  31 & PatuS-Cas9-21d-5\_R1\_001.fastq.gz & PatuS\_Cas9\_day21\_r5 \\ 
+   \hline
+\end{tabular}
+\caption{Summary of samples} 
+\label{tab:three}
+\end{table}
+
+
+
+The meanings of the columns are as follows.
+
+\begin{itemize}
+\item \textbf{Row}: The row number in the table;
+\item \textbf{File}: The filename of fastq file;
+\item \textbf{Label}: Assigned label;
+\item \textbf{Reads}: The total read count in the fastq file;
+\item \textbf{Mapped}: Reads that can be mapped to gRNA library;
+\item \textbf{Percentage}: The percentage of mapped reads;
+\item \textbf{TotalsgRNAs}: The number of sgRNAs in the library; 
+\item \textbf{ZeroCounts}: The number of sgRNA with 0 read counts;
+\item \textbf{GiniIndex}: The Gini Index of the read count distribution. Gini index can be used to measure the evenness of the read counts, and a smaller value means a more even distribution of the read counts.
+\end{itemize}
+
+
+
+\newpage\section{Normalized read count distribution of all samples}
+The following figure shows the distribution of median-normalized read counts in all samples.
+
+
+\includegraphics{PatuS_countsummary-005}
+
+The following figure shows the histogram of median-normalized read counts in all samples.
+
+
+\includegraphics{PatuS_countsummary-006}
+
+
+\newpage\section{Principle Component Analysis}
+The following figure shows the first 2 principle components (PCs) from the Principle Component Analysis (PCA), and the percentage of variances explained by the top PCs.
+
+
+
+\includegraphics{PatuS_countsummary-007}
+
+\includegraphics{PatuS_countsummary-008}
+
+
+\newpage\section{Sample clustering}
+The following figure shows the sample clustering result.
+
+
+\includegraphics{PatuS_countsummary-009}
+
+%__INDIVIDUAL_PAGE__
+
+
+
+
+
+\end{document}
+
